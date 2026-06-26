@@ -1,10 +1,18 @@
 import json
 from pathlib import Path
 
-def load_customer_data():
+def load_all_customers():
     path = Path("data/mock_customer.json")
     with open(path, "r") as f:
         return json.load(f)
+    
+def load_customer_data(customer_id: str = None):
+    customers = load_all_customers()
+    if customer_id:
+        for c in customers:
+            if c["customer_id"] == customer_id:
+                return c
+    return customers[0]
 
 def analyze_balance(customer: dict) -> dict:
     balance = customer["account_balance"]
@@ -53,24 +61,31 @@ def detect_disengagement(customer: dict) -> dict:
         "signals": signals
     }
 
-def get_recommendation(customer: dict, surplus: float) -> list:
+def get_recommendation(customer: dict, surplus: float, risk_appetite: str = "moderate") -> list:
     recommendations = []
     goals = customer["financial_goals"]
-    risk = customer["risk_appetite"]
 
-    if "emergency_fund" in goals and surplus > 10000:
+    if surplus <= 0:
+        return [{
+            "action": "Build Savings First",
+            "amount": 0,
+            "reason": "Insufficient surplus for investment. Focus on building emergency fund.",
+            "tier": "Tier 1 — informational only"
+        }]
+
+    if "emergency_fund" in goals and surplus > 5000:
         recommendations.append({
             "action": "Open Recurring Deposit",
-            "amount": 5000,
+            "amount": min(5000, int(surplus * 0.1)),
             "reason": "Build emergency fund — 3 months expenses target",
             "tier": "Tier 2 — requires your approval"
         })
 
-    if risk == "moderate" and surplus > 20000:
+    if risk_appetite in ["moderate", "high"] and surplus > 20000:
         recommendations.append({
             "action": "Start SIP in Balanced Mutual Fund",
-            "amount": 3000,
-            "reason": "Idle surplus detected — moderate risk SIP suits your profile",
+            "amount": min(3000, int(surplus * 0.05)),
+            "reason": "Idle surplus detected — SIP suits your risk profile",
             "tier": "Tier 2 — requires your approval"
         })
 
@@ -82,7 +97,20 @@ def get_recommendation(customer: dict, surplus: float) -> list:
             "tier": "Tier 1 — informational only"
         })
 
-    return recommendations
+    if risk_appetite == "high" and surplus > 50000:
+        recommendations.append({
+            "action": "Invest in Equity Mutual Fund",
+            "amount": round(surplus * 0.3),
+            "reason": "High risk appetite and large surplus — equity suits long-term wealth creation",
+            "tier": "Tier 2 — requires your approval"
+        })
+
+    return recommendations if recommendations else [{
+        "action": "Monitor and Review",
+        "amount": 0,
+        "reason": "Insufficient data or surplus for recommendation",
+        "tier": "Tier 1 — informational only"
+    }]
 
 def check_compliance(action: str) -> dict:
     autonomous_allowed = ["Auto-sweep excess to FD"]

@@ -2,6 +2,7 @@
   "behavioral": {
     "agent": "Behavioral Intelligence Agent",
     "customer_name": "Rahul Sharma",
+    "customer_id": "SBI-HYD-2024-001",
     "disengagement": {
       "disengagement_score": 100,
       "disengagement_level": "High",
@@ -18,7 +19,8 @@
       "reserve_buffer": 27000,
       "investable_surplus": 58000
     },
-    "analysis": "**Disengagement Status:** Rahul Sharma's account shows high disengagement, with no login for 12 days and an idle balance for 45 days. His overall disengagement score is 100/100, indicating a high risk of account inactivity. \n\n**Top 2 Risk Factors:** \n1. Prolonged period of inactivity (45 days) \n2. Infrequent logins (no login for 12 days)\n\n**Next Steps:** The next agent should focus on re-establishing contact with Rahul, understanding the reasons behind his inactivity, and exploring ways to re-engage him with his account, addressing any potential concerns or issues he may be facing."
+    "risk_appetite": "moderate",
+    "analysis": "**Disengagement Status:** Rahul Sharma has been inactive for 12 days, with an idle balance of 45 days, indicating a high disengagement level. His low notification response rate and limited product usage also contribute to this status. \n\n**Top 2 Risk Factors:** \n1. Prolonged inactivity (no login for 12 days and idle balance for 45 days)\n2. Low engagement with SBI services (using fewer than 3 SBI products and low notification response rate)\n\n**Confirmed Risk Appetite:** The calculated moderate risk appetite seems reasonable, given Rahul's occupation as a software engineer, which may indicate a relatively stable income and some financial awareness, but his inactivity and low engagement suggest a need for personalized guidance to align his investments with his risk appetite.\n\n**Advisor Agent Focus:** The Advisor Agent should focus on re-establishing contact with Rahul, understanding the reasons behind his inactivity, and assessing his current financial goals and needs to provide tailored advice and re-engage him with SBI's services."
   },
   "advisor": {
     "agent": "Proactive Advisor Agent",
@@ -31,8 +33,8 @@
       },
       {
         "action": "Start SIP in Balanced Mutual Fund",
-        "amount": 3000,
-        "reason": "Idle surplus detected \u2014 moderate risk SIP suits your profile",
+        "amount": 2900,
+        "reason": "Idle surplus detected \u2014 SIP suits your risk profile",
         "tier": "Tier 2 \u2014 requires your approval"
       },
       {
@@ -48,7 +50,8 @@
       "reason": "Build emergency fund \u2014 3 months expenses target",
       "tier": "Tier 2 \u2014 requires your approval"
     },
-    "personalized_message": "Hi Rahul, I noticed you've had an idle balance for 45 days. Consider opening a Recurring Deposit for \u20b95000 to build your emergency fund. This suits your moderate risk appetite and financial goals. This requires your approval (Tier 2)."
+    "risk_appetite": "moderate",
+    "personalized_message": "Hi Rahul, I noticed you've been inactive for a while. To build your emergency fund, I recommend opening a Recurring Deposit of \u20b95000 (Tier 2 - requires your approval). This suits your moderate risk appetite and helps you reach your 3-month expenses target. Let me know if you're interested."
   },
   "action": {
     "agent": "Autonomous Action Agent",
@@ -71,6 +74,6 @@
         "timestamp": "2026-06-27 09:00:00"
       }
     ],
-    "status_update": "Recurring Deposit of \u20b95000 pending approval. Compliance check passed. Audit trail maintained. Approval required. Please approve to proceed."
+    "status_update": "Recurring Deposit of \u20b95000 is pending approval. Compliance check passed. Audit logged. Please approve to proceed."
   }
 }

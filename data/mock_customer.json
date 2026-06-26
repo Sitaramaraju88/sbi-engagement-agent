@@ -1,21 +1,123 @@
-{
-  "customer_id": "SBI_001",
-  "name": "Rahul Sharma",
-  "age": 28,
-  "city": "Hyderabad",
-  "account_balance": 85000,
-  "monthly_salary": 45000,
-  "last_login_days_ago": 12,
-  "transactions": [
-    {"date": "2026-06-01", "type": "debit", "category": "food", "amount": 2500},
-    {"date": "2026-06-05", "type": "debit", "category": "rent", "amount": 15000},
-    {"date": "2026-06-10", "type": "debit", "category": "utilities", "amount": 3000},
-    {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 45000},
-    {"date": "2026-06-20", "type": "debit", "category": "shopping", "amount": 5000}
-  ],
-  "existing_products": ["savings_account", "debit_card"],
-  "risk_appetite": "moderate",
-  "financial_goals": ["emergency_fund", "retirement"],
-  "notification_response_rate": 0.2,
-  "idle_balance_days": 45
-}
+[
+  {
+    "customer_id": "SBI-HYD-2024-001",
+    "name": "Rahul Sharma",
+    "age": 28,
+    "city": "Hyderabad",
+    "occupation": "Software Engineer",
+    "account_balance": 85000,
+    "monthly_salary": 45000,
+    "last_login_days_ago": 12,
+    "transactions": [
+      {"date": "2026-06-01", "type": "debit", "category": "food", "amount": 2500},
+      {"date": "2026-06-05", "type": "debit", "category": "rent", "amount": 15000},
+      {"date": "2026-06-10", "type": "debit", "category": "utilities", "amount": 3000},
+      {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 45000},
+      {"date": "2026-06-20", "type": "debit", "category": "shopping", "amount": 5000}
+    ],
+    "existing_products": ["savings_account", "debit_card"],
+    "financial_goals": ["emergency_fund", "retirement"],
+    "notification_response_rate": 0.2,
+    "idle_balance_days": 45
+  },
+  {
+    "customer_id": "SBI-MUM-2024-002",
+    "name": "Priya Patel",
+    "age": 34,
+    "city": "Mumbai",
+    "occupation": "Investment Banker",
+    "account_balance": 250000,
+    "monthly_salary": 120000,
+    "last_login_days_ago": 1,
+    "transactions": [
+      {"date": "2026-06-01", "type": "debit", "category": "rent", "amount": 35000},
+      {"date": "2026-06-03", "type": "debit", "category": "investment", "amount": 20000},
+      {"date": "2026-06-10", "type": "debit", "category": "utilities", "amount": 5000},
+      {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 120000},
+      {"date": "2026-06-18", "type": "debit", "category": "investment", "amount": 30000}
+    ],
+    "existing_products": ["savings_account", "debit_card", "credit_card", "mutual_fund", "fd"],
+    "financial_goals": ["wealth_creation", "retirement", "tax_saving"],
+    "notification_response_rate": 0.85,
+    "idle_balance_days": 2
+  },
+  {
+    "customer_id": "SBI-DEL-2024-003",
+    "name": "Amit Verma",
+    "age": 22,
+    "city": "Delhi",
+    "occupation": "Fresh Graduate",
+    "account_balance": 15000,
+    "monthly_salary": 25000,
+    "last_login_days_ago": 3,
+    "transactions": [
+      {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 25000},
+      {"date": "2026-06-16", "type": "debit", "category": "rent", "amount": 8000},
+      {"date": "2026-06-17", "type": "debit", "category": "food", "amount": 2000}
+    ],
+    "existing_products": ["savings_account"],
+    "financial_goals": ["emergency_fund"],
+    "notification_response_rate": 0.5,
+    "idle_balance_days": 5
+  },
+  {
+    "customer_id": "SBI-CHN-2024-004",
+    "name": "Lakshmi Narayanan",
+    "age": 58,
+    "city": "Chennai",
+    "occupation": "Retired Teacher",
+    "account_balance": 320000,
+    "monthly_salary": 30000,
+    "last_login_days_ago": 8,
+    "transactions": [
+      {"date": "2026-06-01", "type": "credit", "category": "pension", "amount": 30000},
+      {"date": "2026-06-05", "type": "debit", "category": "utilities", "amount": 4000},
+      {"date": "2026-06-10", "type": "debit", "category": "medical", "amount": 8000},
+      {"date": "2026-06-20", "type": "debit", "category": "food", "amount": 6000}
+    ],
+    "existing_products": ["savings_account", "fd", "debit_card"],
+    "financial_goals": ["medical_fund", "estate_planning"],
+    "notification_response_rate": 0.4,
+    "idle_balance_days": 20
+  },
+  {
+    "customer_id": "SBI-BLR-2024-005",
+    "name": "Rohan Mehta",
+    "age": 20,
+    "city": "Bangalore",
+    "occupation": "Student",
+    "account_balance": 8000,
+    "monthly_salary": 0,
+    "last_login_days_ago": 20,
+    "transactions": [
+      {"date": "2026-06-01", "type": "credit", "category": "family_transfer", "amount": 10000},
+      {"date": "2026-06-05", "type": "debit", "category": "food", "amount": 3000},
+      {"date": "2026-06-15", "type": "debit", "category": "education", "amount": 5000}
+    ],
+    "existing_products": ["savings_account"],
+    "financial_goals": ["education_fund"],
+    "notification_response_rate": 0.1,
+    "idle_balance_days": 60
+  },
+  {
+    "customer_id": "SBI-KOL-2024-006",
+    "name": "Sunita Agarwal",
+    "age": 45,
+    "city": "Kolkata",
+    "occupation": "Business Owner",
+    "account_balance": 750000,
+    "monthly_salary": 200000,
+    "last_login_days_ago": 2,
+    "transactions": [
+      {"date": "2026-06-01", "type": "debit", "category": "business", "amount": 50000},
+      {"date": "2026-06-05", "type": "credit", "category": "business_income", "amount": 200000},
+      {"date": "2026-06-10", "type": "debit", "category": "investment", "amount": 100000},
+      {"date": "2026-06-15", "type": "debit", "category": "utilities", "amount": 10000},
+      {"date": "2026-06-20", "type": "debit", "category": "rent", "amount": 25000}
+    ],
+    "existing_products": ["savings_account", "current_account", "credit_card", "mutual_fund", "fd", "insurance"],
+    "financial_goals": ["business_expansion", "wealth_creation", "tax_saving"],
+    "notification_response_rate": 0.75,
+    "idle_balance_days": 3
+  }
+]
