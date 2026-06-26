@@ -1,123 +1,2129 @@
 [
   {
     "customer_id": "SBI-HYD-2024-001",
-    "name": "Rahul Sharma",
-    "age": 28,
-    "city": "Hyderabad",
-    "occupation": "Software Engineer",
-    "account_balance": 85000,
-    "monthly_salary": 45000,
-    "last_login_days_ago": 12,
-    "transactions": [
-      {"date": "2026-06-01", "type": "debit", "category": "food", "amount": 2500},
-      {"date": "2026-06-05", "type": "debit", "category": "rent", "amount": 15000},
-      {"date": "2026-06-10", "type": "debit", "category": "utilities", "amount": 3000},
-      {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 45000},
-      {"date": "2026-06-20", "type": "debit", "category": "shopping", "amount": 5000}
-    ],
-    "existing_products": ["savings_account", "debit_card"],
-    "financial_goals": ["emergency_fund", "retirement"],
-    "notification_response_rate": 0.2,
-    "idle_balance_days": 45
-  },
-  {
-    "customer_id": "SBI-MUM-2024-002",
-    "name": "Priya Patel",
-    "age": 34,
-    "city": "Mumbai",
-    "occupation": "Investment Banker",
-    "account_balance": 250000,
-    "monthly_salary": 120000,
-    "last_login_days_ago": 1,
-    "transactions": [
-      {"date": "2026-06-01", "type": "debit", "category": "rent", "amount": 35000},
-      {"date": "2026-06-03", "type": "debit", "category": "investment", "amount": 20000},
-      {"date": "2026-06-10", "type": "debit", "category": "utilities", "amount": 5000},
-      {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 120000},
-      {"date": "2026-06-18", "type": "debit", "category": "investment", "amount": 30000}
-    ],
-    "existing_products": ["savings_account", "debit_card", "credit_card", "mutual_fund", "fd"],
-    "financial_goals": ["wealth_creation", "retirement", "tax_saving"],
-    "notification_response_rate": 0.85,
-    "idle_balance_days": 2
-  },
-  {
-    "customer_id": "SBI-DEL-2024-003",
-    "name": "Amit Verma",
+    "name": "Bhargavi Mehta",
     "age": 22,
-    "city": "Delhi",
-    "occupation": "Fresh Graduate",
-    "account_balance": 15000,
-    "monthly_salary": 25000,
-    "last_login_days_ago": 3,
-    "transactions": [
-      {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 25000},
-      {"date": "2026-06-16", "type": "debit", "category": "rent", "amount": 8000},
-      {"date": "2026-06-17", "type": "debit", "category": "food", "amount": 2000}
-    ],
-    "existing_products": ["savings_account"],
-    "financial_goals": ["emergency_fund"],
-    "notification_response_rate": 0.5,
-    "idle_balance_days": 5
-  },
-  {
-    "customer_id": "SBI-CHN-2024-004",
-    "name": "Lakshmi Narayanan",
-    "age": 58,
     "city": "Chennai",
-    "occupation": "Retired Teacher",
-    "account_balance": 320000,
-    "monthly_salary": 30000,
-    "last_login_days_ago": 8,
-    "transactions": [
-      {"date": "2026-06-01", "type": "credit", "category": "pension", "amount": 30000},
-      {"date": "2026-06-05", "type": "debit", "category": "utilities", "amount": 4000},
-      {"date": "2026-06-10", "type": "debit", "category": "medical", "amount": 8000},
-      {"date": "2026-06-20", "type": "debit", "category": "food", "amount": 6000}
-    ],
-    "existing_products": ["savings_account", "fd", "debit_card"],
-    "financial_goals": ["medical_fund", "estate_planning"],
-    "notification_response_rate": 0.4,
-    "idle_balance_days": 20
+    "occupation": "Lawyer",
+    "account_balance": 176200,
+    "monthly_salary": 102000,
+    "last_login_days_ago": 70,
+    "notification_response_rate": 0.59,
+    "idle_balance_days": 11,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance"
+    ]
   },
   {
-    "customer_id": "SBI-BLR-2024-005",
-    "name": "Rohan Mehta",
-    "age": 20,
-    "city": "Bangalore",
-    "occupation": "Student",
-    "account_balance": 8000,
-    "monthly_salary": 0,
-    "last_login_days_ago": 20,
-    "transactions": [
-      {"date": "2026-06-01", "type": "credit", "category": "family_transfer", "amount": 10000},
-      {"date": "2026-06-05", "type": "debit", "category": "food", "amount": 3000},
-      {"date": "2026-06-15", "type": "debit", "category": "education", "amount": 5000}
-    ],
-    "existing_products": ["savings_account"],
-    "financial_goals": ["education_fund"],
-    "notification_response_rate": 0.1,
-    "idle_balance_days": 60
-  },
-  {
-    "customer_id": "SBI-KOL-2024-006",
-    "name": "Sunita Agarwal",
-    "age": 45,
+    "customer_id": "SBI-HYD-2024-002",
+    "name": "Madhuri Goud",
+    "age": 38,
     "city": "Kolkata",
-    "occupation": "Business Owner",
-    "account_balance": 750000,
-    "monthly_salary": 200000,
-    "last_login_days_ago": 2,
-    "transactions": [
-      {"date": "2026-06-01", "type": "debit", "category": "business", "amount": 50000},
-      {"date": "2026-06-05", "type": "credit", "category": "business_income", "amount": 200000},
-      {"date": "2026-06-10", "type": "debit", "category": "investment", "amount": 100000},
-      {"date": "2026-06-15", "type": "debit", "category": "utilities", "amount": 10000},
-      {"date": "2026-06-20", "type": "debit", "category": "rent", "amount": 25000}
+    "occupation": "Software Engineer",
+    "account_balance": 286400,
+    "monthly_salary": 66000,
+    "last_login_days_ago": 44,
+    "notification_response_rate": 0.09,
+    "idle_balance_days": 13,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "credit_card",
+      "fixed_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-003",
+    "name": "Charan Babu",
+    "age": 44,
+    "city": "Anantapur",
+    "occupation": "Engineer",
+    "account_balance": 84700,
+    "monthly_salary": 96000,
+    "last_login_days_ago": 11,
+    "notification_response_rate": 0.23,
+    "idle_balance_days": 109,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "recurring_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-004",
+    "name": "Aparna Kulkarni",
+    "age": 25,
+    "city": "Eluru",
+    "occupation": "Bank Employee",
+    "account_balance": 338300,
+    "monthly_salary": 75000,
+    "last_login_days_ago": 35,
+    "notification_response_rate": 0.64,
+    "idle_balance_days": 118,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "personal_loan"
     ],
-    "existing_products": ["savings_account", "current_account", "credit_card", "mutual_fund", "fd", "insurance"],
-    "financial_goals": ["business_expansion", "wealth_creation", "tax_saving"],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 830000
+      },
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 220000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-005",
+    "name": "Seema Subramaniam",
+    "age": 37,
+    "city": "Chennai",
+    "occupation": "Electrician",
+    "account_balance": 174000,
+    "monthly_salary": 32000,
+    "last_login_days_ago": 64,
+    "notification_response_rate": 0.76,
+    "idle_balance_days": 11,
+    "current_services_in_use": [
+      "savings_account",
+      "home_loan",
+      "fixed_deposit",
+      "credit_card",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 3160000
+      },
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 700000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-006",
+    "name": "Charan Dubey",
+    "age": 61,
+    "city": "Kakinada",
+    "occupation": "Farmer",
+    "account_balance": 17400,
+    "monthly_salary": 13000,
+    "last_login_days_ago": 68,
+    "notification_response_rate": 0.0,
+    "idle_balance_days": 117,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "net_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 610000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-007",
+    "name": "Siddharth Desai",
+    "age": 51,
+    "city": "Rajahmundry",
+    "occupation": "Bank Employee",
+    "account_balance": 193900,
+    "monthly_salary": 57000,
+    "last_login_days_ago": 40,
+    "notification_response_rate": 1.0,
+    "idle_balance_days": 51,
+    "current_services_in_use": [
+      "savings_account",
+      "fixed_deposit",
+      "education_loan",
+      "health_insurance",
+      "mobile_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1930000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-008",
+    "name": "Rekha Subramaniam",
+    "age": 29,
+    "city": "Chennai",
+    "occupation": "Electrician",
+    "account_balance": 60600,
+    "monthly_salary": 33000,
+    "last_login_days_ago": 13,
+    "notification_response_rate": 0.43,
+    "idle_balance_days": 84,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "personal_loan",
+      "fixed_deposit",
+      "debit_card"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 110000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-009",
+    "name": "Usha Singh",
+    "age": 49,
+    "city": "Kolkata",
+    "occupation": "Architect",
+    "account_balance": 51400,
+    "monthly_salary": 66000,
+    "last_login_days_ago": 31,
+    "notification_response_rate": 0.41,
+    "idle_balance_days": 21,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-010",
+    "name": "Simran Kumar",
+    "age": 41,
+    "city": "Warangal",
+    "occupation": "Doctor",
+    "account_balance": 490200,
+    "monthly_salary": 157000,
+    "last_login_days_ago": 11,
+    "notification_response_rate": 0.19,
+    "idle_balance_days": 108,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 810000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-011",
+    "name": "Naresh Khan",
+    "age": 25,
+    "city": "Hyderabad",
+    "occupation": "Data Analyst",
+    "account_balance": 575200,
+    "monthly_salary": 96000,
+    "last_login_days_ago": 69,
+    "notification_response_rate": 0.51,
+    "idle_balance_days": 27,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-012",
+    "name": "Ananya Chauhan",
+    "age": 28,
+    "city": "Jaipur",
+    "occupation": "Business Owner",
+    "account_balance": 903400,
+    "monthly_salary": 255000,
+    "last_login_days_ago": 44,
+    "notification_response_rate": 0.69,
+    "idle_balance_days": 26,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "mutual_fund",
+      "fixed_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-013",
+    "name": "Tanmay Hussain",
+    "age": 29,
+    "city": "Warangal",
+    "occupation": "Nurse",
+    "account_balance": 217800,
+    "monthly_salary": 40000,
+    "last_login_days_ago": 27,
+    "notification_response_rate": 0.25,
+    "idle_balance_days": 87,
+    "current_services_in_use": [
+      "savings_account",
+      "home_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 5490000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-014",
+    "name": "Imran Ali",
+    "age": 63,
+    "city": "Surat",
+    "occupation": "Accountant",
+    "account_balance": 53600,
+    "monthly_salary": 39000,
+    "last_login_days_ago": 5,
+    "notification_response_rate": 0.47,
+    "idle_balance_days": 109,
+    "current_services_in_use": [
+      "savings_account",
+      "personal_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 340000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-015",
+    "name": "Tarun Iyer",
+    "age": 46,
+    "city": "Delhi",
+    "occupation": "Architect",
+    "account_balance": 464600,
+    "monthly_salary": 82000,
+    "last_login_days_ago": 23,
+    "notification_response_rate": 0.96,
+    "idle_balance_days": 74,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-016",
+    "name": "Dev Jain",
+    "age": 63,
+    "city": "Mahbubnagar",
+    "occupation": "HR Manager",
+    "account_balance": 60200,
+    "monthly_salary": 68000,
+    "last_login_days_ago": 16,
+    "notification_response_rate": 0.9,
+    "idle_balance_days": 92,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "home_loan",
+      "life_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 6630000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-017",
+    "name": "Swathi Khan",
+    "age": 50,
+    "city": "Kurnool",
+    "occupation": "Data Analyst",
+    "account_balance": 165900,
+    "monthly_salary": 99000,
+    "last_login_days_ago": 85,
+    "notification_response_rate": 0.28,
+    "idle_balance_days": 10,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "mobile_banking",
+      "health_insurance",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-018",
+    "name": "Swathi Shah",
+    "age": 21,
+    "city": "Jaipur",
+    "occupation": "Business Owner",
+    "account_balance": 749300,
+    "monthly_salary": 264000,
+    "last_login_days_ago": 67,
+    "notification_response_rate": 0.05,
+    "idle_balance_days": 59,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "health_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-019",
+    "name": "Ajay Ahmed",
+    "age": 31,
+    "city": "Chennai",
+    "occupation": "Marketing Executive",
+    "account_balance": 102100,
+    "monthly_salary": 53000,
+    "last_login_days_ago": 36,
+    "notification_response_rate": 0.78,
+    "idle_balance_days": 98,
+    "current_services_in_use": [
+      "savings_account",
+      "mobile_banking",
+      "life_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-020",
+    "name": "Imran Subramaniam",
+    "age": 50,
+    "city": "Nellore",
+    "occupation": "Doctor",
+    "account_balance": 543700,
+    "monthly_salary": 107000,
+    "last_login_days_ago": 74,
+    "notification_response_rate": 0.48,
+    "idle_balance_days": 48,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "mutual_fund",
+      "health_insurance",
+      "current_account"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-021",
+    "name": "Savitha Nair",
+    "age": 60,
+    "city": "Rajahmundry",
+    "occupation": "Software Engineer",
+    "account_balance": 364300,
+    "monthly_salary": 97000,
+    "last_login_days_ago": 83,
+    "notification_response_rate": 0.14,
+    "idle_balance_days": 54,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-022",
+    "name": "Sunil Kulkarni",
+    "age": 25,
+    "city": "Pune",
+    "occupation": "Doctor",
+    "account_balance": 120000,
+    "monthly_salary": 179000,
+    "last_login_days_ago": 80,
+    "notification_response_rate": 0.24,
+    "idle_balance_days": 19,
+    "current_services_in_use": [
+      "savings_account",
+      "fixed_deposit",
+      "current_account"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-023",
+    "name": "Suresh Shah",
+    "age": 61,
+    "city": "Nalgonda",
+    "occupation": "Business Owner",
+    "account_balance": 1153900,
+    "monthly_salary": 243000,
+    "last_login_days_ago": 73,
+    "notification_response_rate": 0.04,
+    "idle_balance_days": 100,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-024",
+    "name": "Savitha Hussain",
+    "age": 58,
+    "city": "Adilabad",
+    "occupation": "Sales Manager",
+    "account_balance": 258500,
+    "monthly_salary": 51000,
+    "last_login_days_ago": 58,
     "notification_response_rate": 0.75,
-    "idle_balance_days": 3
+    "idle_balance_days": 31,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-025",
+    "name": "Venkat Menon",
+    "age": 56,
+    "city": "Pune",
+    "occupation": "Accountant",
+    "account_balance": 165300,
+    "monthly_salary": 53000,
+    "last_login_days_ago": 38,
+    "notification_response_rate": 0.4,
+    "idle_balance_days": 28,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "net_banking",
+      "current_account",
+      "debit_card"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 800000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-026",
+    "name": "Shreya Trivedi",
+    "age": 33,
+    "city": "Visakhapatnam",
+    "occupation": "Business Owner",
+    "account_balance": 879000,
+    "monthly_salary": 255000,
+    "last_login_days_ago": 62,
+    "notification_response_rate": 0.72,
+    "idle_balance_days": 35,
+    "current_services_in_use": [
+      "savings_account",
+      "fixed_deposit",
+      "mobile_banking"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-027",
+    "name": "Arjun Chauhan",
+    "age": 51,
+    "city": "Karimnagar",
+    "occupation": "Teacher",
+    "account_balance": 121800,
+    "monthly_salary": 38000,
+    "last_login_days_ago": 20,
+    "notification_response_rate": 0.56,
+    "idle_balance_days": 103,
+    "current_services_in_use": [
+      "savings_account",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-028",
+    "name": "Archana Parekh",
+    "age": 27,
+    "city": "Pune",
+    "occupation": "Engineer",
+    "account_balance": 151100,
+    "monthly_salary": 91000,
+    "last_login_days_ago": 31,
+    "notification_response_rate": 0.55,
+    "idle_balance_days": 22,
+    "current_services_in_use": [
+      "savings_account",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-029",
+    "name": "Padma Patil",
+    "age": 58,
+    "city": "Delhi",
+    "occupation": "Engineer",
+    "account_balance": 88200,
+    "monthly_salary": 78000,
+    "last_login_days_ago": 35,
+    "notification_response_rate": 0.14,
+    "idle_balance_days": 105,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-030",
+    "name": "Deepak Iyer",
+    "age": 55,
+    "city": "Tirupati",
+    "occupation": "Data Analyst",
+    "account_balance": 227400,
+    "monthly_salary": 60000,
+    "last_login_days_ago": 4,
+    "notification_response_rate": 0.23,
+    "idle_balance_days": 11,
+    "current_services_in_use": [
+      "savings_account",
+      "health_insurance",
+      "home_loan",
+      "mutual_fund",
+      "recurring_deposit"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 2720000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-031",
+    "name": "Ramesh Desai",
+    "age": 46,
+    "city": "Ahmedabad",
+    "occupation": "Architect",
+    "account_balance": 186100,
+    "monthly_salary": 62000,
+    "last_login_days_ago": 52,
+    "notification_response_rate": 0.51,
+    "idle_balance_days": 110,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "home_loan",
+      "debit_card"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 6160000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-032",
+    "name": "Ajay Nair",
+    "age": 39,
+    "city": "Kurnool",
+    "occupation": "Marketing Executive",
+    "account_balance": 27700,
+    "monthly_salary": 42000,
+    "last_login_days_ago": 40,
+    "notification_response_rate": 0.01,
+    "idle_balance_days": 70,
+    "current_services_in_use": [
+      "savings_account",
+      "health_insurance",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-033",
+    "name": "Tanmay Siddiqui",
+    "age": 33,
+    "city": "Lucknow",
+    "occupation": "Farmer",
+    "account_balance": 82900,
+    "monthly_salary": 18000,
+    "last_login_days_ago": 36,
+    "notification_response_rate": 0.79,
+    "idle_balance_days": 98,
+    "current_services_in_use": [
+      "savings_account",
+      "mobile_banking",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-034",
+    "name": "Fatima Mishra",
+    "age": 65,
+    "city": "Nalgonda",
+    "occupation": "Electrician",
+    "account_balance": 55300,
+    "monthly_salary": 31000,
+    "last_login_days_ago": 49,
+    "notification_response_rate": 0.99,
+    "idle_balance_days": 49,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account",
+      "home_loan",
+      "health_insurance",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 6790000
+      },
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 1350000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-035",
+    "name": "Charan Bhatt",
+    "age": 52,
+    "city": "Surat",
+    "occupation": "Architect",
+    "account_balance": 241600,
+    "monthly_salary": 62000,
+    "last_login_days_ago": 37,
+    "notification_response_rate": 0.75,
+    "idle_balance_days": 29,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance",
+      "mobile_banking"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-036",
+    "name": "Sunita Verma",
+    "age": 32,
+    "city": "Nizamabad",
+    "occupation": "Farmer",
+    "account_balance": 62500,
+    "monthly_salary": 24000,
+    "last_login_days_ago": 19,
+    "notification_response_rate": 0.46,
+    "idle_balance_days": 29,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "mutual_fund"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 310000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-037",
+    "name": "Naresh Dubey",
+    "age": 33,
+    "city": "Guntur",
+    "occupation": "Marketing Executive",
+    "account_balance": 74000,
+    "monthly_salary": 41000,
+    "last_login_days_ago": 38,
+    "notification_response_rate": 0.98,
+    "idle_balance_days": 2,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "recurring_deposit",
+      "health_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-038",
+    "name": "Siddharth Rao",
+    "age": 39,
+    "city": "Visakhapatnam",
+    "occupation": "Retail Shop Owner",
+    "account_balance": 67400,
+    "monthly_salary": 42000,
+    "last_login_days_ago": 22,
+    "notification_response_rate": 0.91,
+    "idle_balance_days": 32,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "mobile_banking",
+      "recurring_deposit"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1980000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-039",
+    "name": "Nitin Parekh",
+    "age": 64,
+    "city": "Adilabad",
+    "occupation": "Electrician",
+    "account_balance": 150700,
+    "monthly_salary": 30000,
+    "last_login_days_ago": 61,
+    "notification_response_rate": 0.62,
+    "idle_balance_days": 3,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card",
+      "life_insurance",
+      "fixed_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-040",
+    "name": "Lavanya Parekh",
+    "age": 65,
+    "city": "Rajahmundry",
+    "occupation": "Retail Shop Owner",
+    "account_balance": 311600,
+    "monthly_salary": 68000,
+    "last_login_days_ago": 13,
+    "notification_response_rate": 0.49,
+    "idle_balance_days": 106,
+    "current_services_in_use": [
+      "savings_account",
+      "personal_loan",
+      "life_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 200000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-041",
+    "name": "Hemanth Pandey",
+    "age": 62,
+    "city": "Mumbai",
+    "occupation": "Farmer",
+    "account_balance": 7800,
+    "monthly_salary": 10000,
+    "last_login_days_ago": 27,
+    "notification_response_rate": 0.83,
+    "idle_balance_days": 8,
+    "current_services_in_use": [
+      "savings_account",
+      "fixed_deposit",
+      "credit_card",
+      "mutual_fund"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-042",
+    "name": "Fatima Patel",
+    "age": 32,
+    "city": "Adilabad",
+    "occupation": "Doctor",
+    "account_balance": 444200,
+    "monthly_salary": 97000,
+    "last_login_days_ago": 9,
+    "notification_response_rate": 0.45,
+    "idle_balance_days": 60,
+    "current_services_in_use": [
+      "savings_account",
+      "health_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-043",
+    "name": "Prasad Singh",
+    "age": 26,
+    "city": "Visakhapatnam",
+    "occupation": "Farmer",
+    "account_balance": 10300,
+    "monthly_salary": 12000,
+    "last_login_days_ago": 71,
+    "notification_response_rate": 0.33,
+    "idle_balance_days": 91,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "life_insurance",
+      "mobile_banking"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-044",
+    "name": "Mohammed Desai",
+    "age": 37,
+    "city": "Vijayawada",
+    "occupation": "Government Employee",
+    "account_balance": 57400,
+    "monthly_salary": 66000,
+    "last_login_days_ago": 56,
+    "notification_response_rate": 0.74,
+    "idle_balance_days": 12,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-045",
+    "name": "Rekha Joshi",
+    "age": 63,
+    "city": "Tirupati",
+    "occupation": "Accountant",
+    "account_balance": 63500,
+    "monthly_salary": 58000,
+    "last_login_days_ago": 74,
+    "notification_response_rate": 0.81,
+    "idle_balance_days": 28,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card",
+      "net_banking",
+      "recurring_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-046",
+    "name": "Arjun Joshi",
+    "age": 31,
+    "city": "Pune",
+    "occupation": "Farmer",
+    "account_balance": 46300,
+    "monthly_salary": 11000,
+    "last_login_days_ago": 63,
+    "notification_response_rate": 0.44,
+    "idle_balance_days": 77,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "life_insurance",
+      "personal_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 360000
+      },
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 490000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-047",
+    "name": "Rekha Gandhi",
+    "age": 29,
+    "city": "Pune",
+    "occupation": "Lawyer",
+    "account_balance": 248900,
+    "monthly_salary": 108000,
+    "last_login_days_ago": 56,
+    "notification_response_rate": 0.13,
+    "idle_balance_days": 22,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 1340000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-048",
+    "name": "Karthik Qureshi",
+    "age": 26,
+    "city": "Nellore",
+    "occupation": "Business Owner",
+    "account_balance": 359100,
+    "monthly_salary": 124000,
+    "last_login_days_ago": 44,
+    "notification_response_rate": 0.33,
+    "idle_balance_days": 28,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "debit_card",
+      "personal_loan",
+      "recurring_deposit"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 560000
+      },
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 470000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-049",
+    "name": "Anjali Agarwal",
+    "age": 59,
+    "city": "Khammam",
+    "occupation": "Teacher",
+    "account_balance": 177700,
+    "monthly_salary": 31000,
+    "last_login_days_ago": 58,
+    "notification_response_rate": 0.92,
+    "idle_balance_days": 87,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "net_banking",
+      "mutual_fund",
+      "health_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 700000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-050",
+    "name": "Ramesh Singh",
+    "age": 62,
+    "city": "Surat",
+    "occupation": "Teacher",
+    "account_balance": 144700,
+    "monthly_salary": 44000,
+    "last_login_days_ago": 58,
+    "notification_response_rate": 0.81,
+    "idle_balance_days": 116,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "education_loan",
+      "health_insurance",
+      "current_account"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1260000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-051",
+    "name": "Zara Jain",
+    "age": 59,
+    "city": "Warangal",
+    "occupation": "Sales Manager",
+    "account_balance": 90200,
+    "monthly_salary": 39000,
+    "last_login_days_ago": 78,
+    "notification_response_rate": 0.15,
+    "idle_balance_days": 111,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "mobile_banking",
+      "health_insurance",
+      "life_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-052",
+    "name": "Imran Nair",
+    "age": 63,
+    "city": "Bangalore",
+    "occupation": "Pharmacist",
+    "account_balance": 206700,
+    "monthly_salary": 51000,
+    "last_login_days_ago": 40,
+    "notification_response_rate": 0.95,
+    "idle_balance_days": 23,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "home_loan",
+      "current_account",
+      "net_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1950000
+      },
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 4760000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-053",
+    "name": "Faisal Joshi",
+    "age": 31,
+    "city": "Ramagundam",
+    "occupation": "Farmer",
+    "account_balance": 125700,
+    "monthly_salary": 23000,
+    "last_login_days_ago": 31,
+    "notification_response_rate": 0.61,
+    "idle_balance_days": 56,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account",
+      "personal_loan",
+      "home_loan",
+      "life_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 150000
+      },
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 4280000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-054",
+    "name": "Riya Bhatt",
+    "age": 54,
+    "city": "Surat",
+    "occupation": "Business Owner",
+    "account_balance": 129800,
+    "monthly_salary": 135000,
+    "last_login_days_ago": 66,
+    "notification_response_rate": 0.83,
+    "idle_balance_days": 18,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 970000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-055",
+    "name": "Aditya Qureshi",
+    "age": 35,
+    "city": "Hyderabad",
+    "occupation": "Sales Manager",
+    "account_balance": 209700,
+    "monthly_salary": 41000,
+    "last_login_days_ago": 5,
+    "notification_response_rate": 0.92,
+    "idle_balance_days": 36,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "credit_card",
+      "mobile_banking"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-056",
+    "name": "Harish Ali",
+    "age": 61,
+    "city": "Kolkata",
+    "occupation": "Farmer",
+    "account_balance": 14400,
+    "monthly_salary": 17000,
+    "last_login_days_ago": 66,
+    "notification_response_rate": 0.24,
+    "idle_balance_days": 73,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "education_loan",
+      "current_account",
+      "life_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 450000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-057",
+    "name": "Tanya Subramaniam",
+    "age": 53,
+    "city": "Kolkata",
+    "occupation": "Pharmacist",
+    "account_balance": 121800,
+    "monthly_salary": 46000,
+    "last_login_days_ago": 33,
+    "notification_response_rate": 0.02,
+    "idle_balance_days": 95,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account",
+      "life_insurance",
+      "personal_loan",
+      "home_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 100000
+      },
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 6120000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-058",
+    "name": "Kavya Khan",
+    "age": 40,
+    "city": "Kakinada",
+    "occupation": "Freelancer",
+    "account_balance": 254500,
+    "monthly_salary": 73000,
+    "last_login_days_ago": 25,
+    "notification_response_rate": 0.36,
+    "idle_balance_days": 36,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account",
+      "net_banking",
+      "life_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-059",
+    "name": "Aditya Khan",
+    "age": 63,
+    "city": "Suryapet",
+    "occupation": "Nurse",
+    "account_balance": 164000,
+    "monthly_salary": 43000,
+    "last_login_days_ago": 58,
+    "notification_response_rate": 0.73,
+    "idle_balance_days": 5,
+    "current_services_in_use": [
+      "savings_account",
+      "credit_card",
+      "health_insurance",
+      "car_loan",
+      "home_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 850000
+      },
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 5980000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-060",
+    "name": "Tarun Qureshi",
+    "age": 44,
+    "city": "Guntur",
+    "occupation": "Electrician",
+    "account_balance": 72700,
+    "monthly_salary": 19000,
+    "last_login_days_ago": 74,
+    "notification_response_rate": 0.53,
+    "idle_balance_days": 17,
+    "current_services_in_use": [
+      "savings_account",
+      "home_loan",
+      "mobile_banking",
+      "car_loan",
+      "debit_card"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 5440000
+      },
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 730000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-061",
+    "name": "Meera Ahmed",
+    "age": 32,
+    "city": "Jaipur",
+    "occupation": "Data Analyst",
+    "account_balance": 302400,
+    "monthly_salary": 61000,
+    "last_login_days_ago": 9,
+    "notification_response_rate": 0.54,
+    "idle_balance_days": 70,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance",
+      "home_loan",
+      "health_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 3390000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-062",
+    "name": "Ajay Nair",
+    "age": 60,
+    "city": "Jaipur",
+    "occupation": "Teacher",
+    "account_balance": 59400,
+    "monthly_salary": 27000,
+    "last_login_days_ago": 10,
+    "notification_response_rate": 0.97,
+    "idle_balance_days": 16,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "personal_loan",
+      "net_banking",
+      "mutual_fund"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 600000
+      },
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 90000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-063",
+    "name": "Anjali Patil",
+    "age": 56,
+    "city": "Adilabad",
+    "occupation": "Government Employee",
+    "account_balance": 213400,
+    "monthly_salary": 55000,
+    "last_login_days_ago": 83,
+    "notification_response_rate": 0.59,
+    "idle_balance_days": 21,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 370000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-064",
+    "name": "Satish Mirza",
+    "age": 25,
+    "city": "Bangalore",
+    "occupation": "Doctor",
+    "account_balance": 294700,
+    "monthly_salary": 101000,
+    "last_login_days_ago": 19,
+    "notification_response_rate": 0.86,
+    "idle_balance_days": 40,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "fixed_deposit",
+      "home_loan",
+      "mutual_fund"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 720000
+      },
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 7350000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-065",
+    "name": "Kamala Siddiqui",
+    "age": 60,
+    "city": "Nellore",
+    "occupation": "Accountant",
+    "account_balance": 316800,
+    "monthly_salary": 58000,
+    "last_login_days_ago": 25,
+    "notification_response_rate": 0.16,
+    "idle_balance_days": 97,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "health_insurance",
+      "home_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 6200000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-066",
+    "name": "Riya Hussain",
+    "age": 29,
+    "city": "Jaipur",
+    "occupation": "Lawyer",
+    "account_balance": 414400,
+    "monthly_salary": 165000,
+    "last_login_days_ago": 73,
+    "notification_response_rate": 0.19,
+    "idle_balance_days": 71,
+    "current_services_in_use": [
+      "savings_account",
+      "home_loan",
+      "current_account",
+      "personal_loan",
+      "net_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 5170000
+      },
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 360000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-067",
+    "name": "Aditi Reddy",
+    "age": 23,
+    "city": "Warangal",
+    "occupation": "Government Employee",
+    "account_balance": 280500,
+    "monthly_salary": 57000,
+    "last_login_days_ago": 42,
+    "notification_response_rate": 0.61,
+    "idle_balance_days": 119,
+    "current_services_in_use": [
+      "savings_account",
+      "credit_card",
+      "mutual_fund",
+      "education_loan",
+      "mobile_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1680000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-068",
+    "name": "Imran Jain",
+    "age": 28,
+    "city": "Nellore",
+    "occupation": "Electrician",
+    "account_balance": 136700,
+    "monthly_salary": 28000,
+    "last_login_days_ago": 61,
+    "notification_response_rate": 0.97,
+    "idle_balance_days": 33,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-069",
+    "name": "Rohan Pandey",
+    "age": 56,
+    "city": "Visakhapatnam",
+    "occupation": "Marketing Executive",
+    "account_balance": 141500,
+    "monthly_salary": 55000,
+    "last_login_days_ago": 44,
+    "notification_response_rate": 0.35,
+    "idle_balance_days": 69,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 1430000
+      },
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 360000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-070",
+    "name": "Kavya Shukla",
+    "age": 26,
+    "city": "Vijayawada",
+    "occupation": "Data Analyst",
+    "account_balance": 187200,
+    "monthly_salary": 98000,
+    "last_login_days_ago": 72,
+    "notification_response_rate": 0.27,
+    "idle_balance_days": 89,
+    "current_services_in_use": [
+      "savings_account",
+      "fixed_deposit",
+      "mobile_banking",
+      "education_loan",
+      "recurring_deposit"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 410000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-071",
+    "name": "Aarav Gupta",
+    "age": 64,
+    "city": "Pune",
+    "occupation": "Government Employee",
+    "account_balance": 203200,
+    "monthly_salary": 35000,
+    "last_login_days_ago": 61,
+    "notification_response_rate": 0.65,
+    "idle_balance_days": 61,
+    "current_services_in_use": [
+      "savings_account",
+      "personal_loan",
+      "life_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 490000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-072",
+    "name": "Tarun Subramaniam",
+    "age": 54,
+    "city": "Tirupati",
+    "occupation": "Government Employee",
+    "account_balance": 209000,
+    "monthly_salary": 68000,
+    "last_login_days_ago": 43,
+    "notification_response_rate": 0.73,
+    "idle_balance_days": 20,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-073",
+    "name": "Deepak Shaikh",
+    "age": 40,
+    "city": "Anantapur",
+    "occupation": "Electrician",
+    "account_balance": 34900,
+    "monthly_salary": 18000,
+    "last_login_days_ago": 86,
+    "notification_response_rate": 0.47,
+    "idle_balance_days": 15,
+    "current_services_in_use": [
+      "savings_account",
+      "health_insurance",
+      "fixed_deposit",
+      "current_account"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-074",
+    "name": "Ganesh Qureshi",
+    "age": 47,
+    "city": "Bangalore",
+    "occupation": "Architect",
+    "account_balance": 370700,
+    "monthly_salary": 120000,
+    "last_login_days_ago": 88,
+    "notification_response_rate": 0.6,
+    "idle_balance_days": 96,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "fixed_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-075",
+    "name": "Divya Mirza",
+    "age": 29,
+    "city": "Kakinada",
+    "occupation": "Retail Shop Owner",
+    "account_balance": 216100,
+    "monthly_salary": 60000,
+    "last_login_days_ago": 51,
+    "notification_response_rate": 0.82,
+    "idle_balance_days": 32,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance",
+      "net_banking",
+      "recurring_deposit",
+      "current_account"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-076",
+    "name": "Hemanth Subramaniam",
+    "age": 29,
+    "city": "Mumbai",
+    "occupation": "HR Manager",
+    "account_balance": 71100,
+    "monthly_salary": 48000,
+    "last_login_days_ago": 1,
+    "notification_response_rate": 0.02,
+    "idle_balance_days": 96,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "credit_card",
+      "health_insurance",
+      "fixed_deposit"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1880000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-077",
+    "name": "Archana Gandhi",
+    "age": 22,
+    "city": "Nalgonda",
+    "occupation": "Engineer",
+    "account_balance": 57000,
+    "monthly_salary": 54000,
+    "last_login_days_ago": 77,
+    "notification_response_rate": 0.7,
+    "idle_balance_days": 86,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 740000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-078",
+    "name": "Murali Raju",
+    "age": 64,
+    "city": "Ahmedabad",
+    "occupation": "Sales Manager",
+    "account_balance": 110100,
+    "monthly_salary": 51000,
+    "last_login_days_ago": 29,
+    "notification_response_rate": 0.3,
+    "idle_balance_days": 52,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1760000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-079",
+    "name": "Venkat Joshi",
+    "age": 40,
+    "city": "Guntur",
+    "occupation": "Bank Employee",
+    "account_balance": 232800,
+    "monthly_salary": 75000,
+    "last_login_days_ago": 19,
+    "notification_response_rate": 0.46,
+    "idle_balance_days": 103,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "health_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-080",
+    "name": "Aditya Ahmed",
+    "age": 44,
+    "city": "Nizamabad",
+    "occupation": "Architect",
+    "account_balance": 541600,
+    "monthly_salary": 107000,
+    "last_login_days_ago": 49,
+    "notification_response_rate": 0.6,
+    "idle_balance_days": 86,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-081",
+    "name": "Priya Pandey",
+    "age": 33,
+    "city": "Chennai",
+    "occupation": "Business Owner",
+    "account_balance": 1535400,
+    "monthly_salary": 256000,
+    "last_login_days_ago": 51,
+    "notification_response_rate": 0.24,
+    "idle_balance_days": 117,
+    "current_services_in_use": [
+      "savings_account",
+      "fixed_deposit",
+      "health_insurance",
+      "mutual_fund",
+      "mobile_banking"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-082",
+    "name": "Vijay Qureshi",
+    "age": 41,
+    "city": "Nellore",
+    "occupation": "Doctor",
+    "account_balance": 808900,
+    "monthly_salary": 154000,
+    "last_login_days_ago": 71,
+    "notification_response_rate": 0.58,
+    "idle_balance_days": 119,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account",
+      "recurring_deposit"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-083",
+    "name": "Tanya Reddy",
+    "age": 25,
+    "city": "Ahmedabad",
+    "occupation": "Doctor",
+    "account_balance": 96300,
+    "monthly_salary": 180000,
+    "last_login_days_ago": 30,
+    "notification_response_rate": 0.71,
+    "idle_balance_days": 8,
+    "current_services_in_use": [
+      "savings_account",
+      "mobile_banking",
+      "life_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-084",
+    "name": "Venkat Sharma",
+    "age": 22,
+    "city": "Kakinada",
+    "occupation": "Lawyer",
+    "account_balance": 822700,
+    "monthly_salary": 140000,
+    "last_login_days_ago": 90,
+    "notification_response_rate": 0.43,
+    "idle_balance_days": 86,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 890000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-085",
+    "name": "Ayesha Malik",
+    "age": 50,
+    "city": "Anantapur",
+    "occupation": "Accountant",
+    "account_balance": 92300,
+    "monthly_salary": 53000,
+    "last_login_days_ago": 84,
+    "notification_response_rate": 0.03,
+    "idle_balance_days": 97,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-086",
+    "name": "Vijayalakshmi Pillai",
+    "age": 38,
+    "city": "Warangal",
+    "occupation": "Teacher",
+    "account_balance": 185200,
+    "monthly_salary": 34000,
+    "last_login_days_ago": 41,
+    "notification_response_rate": 0.96,
+    "idle_balance_days": 2,
+    "current_services_in_use": [
+      "savings_account",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-087",
+    "name": "Ganesh Gandhi",
+    "age": 60,
+    "city": "Eluru",
+    "occupation": "Freelancer",
+    "account_balance": 163000,
+    "monthly_salary": 71000,
+    "last_login_days_ago": 30,
+    "notification_response_rate": 0.55,
+    "idle_balance_days": 45,
+    "current_services_in_use": [
+      "savings_account",
+      "net_banking",
+      "car_loan",
+      "mobile_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 480000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-088",
+    "name": "Vani Ahmed",
+    "age": 44,
+    "city": "Pune",
+    "occupation": "Lawyer",
+    "account_balance": 102000,
+    "monthly_salary": 83000,
+    "last_login_days_ago": 72,
+    "notification_response_rate": 0.51,
+    "idle_balance_days": 71,
+    "current_services_in_use": [
+      "savings_account",
+      "personal_loan",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 100000
+      },
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 1270000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-089",
+    "name": "Rukhsar Gandhi",
+    "age": 26,
+    "city": "Chennai",
+    "occupation": "Architect",
+    "account_balance": 709200,
+    "monthly_salary": 119000,
+    "last_login_days_ago": 22,
+    "notification_response_rate": 0.38,
+    "idle_balance_days": 87,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 1940000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-090",
+    "name": "Naveen Srivastava",
+    "age": 61,
+    "city": "Tirupati",
+    "occupation": "Farmer",
+    "account_balance": 31500,
+    "monthly_salary": 20000,
+    "last_login_days_ago": 39,
+    "notification_response_rate": 0.95,
+    "idle_balance_days": 0,
+    "current_services_in_use": [
+      "savings_account",
+      "credit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-091",
+    "name": "Karthik Patil",
+    "age": 52,
+    "city": "Anantapur",
+    "occupation": "Accountant",
+    "account_balance": 105300,
+    "monthly_salary": 41000,
+    "last_login_days_ago": 76,
+    "notification_response_rate": 0.18,
+    "idle_balance_days": 69,
+    "current_services_in_use": [
+      "savings_account",
+      "home_loan",
+      "debit_card",
+      "mutual_fund",
+      "fixed_deposit"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 2170000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-092",
+    "name": "Simran Reddy",
+    "age": 44,
+    "city": "Bangalore",
+    "occupation": "Architect",
+    "account_balance": 397000,
+    "monthly_salary": 99000,
+    "last_login_days_ago": 32,
+    "notification_response_rate": 0.66,
+    "idle_balance_days": 84,
+    "current_services_in_use": [
+      "savings_account",
+      "debit_card"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-093",
+    "name": "Madhuri Qureshi",
+    "age": 46,
+    "city": "Kurnool",
+    "occupation": "Electrician",
+    "account_balance": 45200,
+    "monthly_salary": 34000,
+    "last_login_days_ago": 14,
+    "notification_response_rate": 0.42,
+    "idle_balance_days": 37,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 1430000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-094",
+    "name": "Karan Ahmed",
+    "age": 65,
+    "city": "Kurnool",
+    "occupation": "Sales Manager",
+    "account_balance": 83900,
+    "monthly_salary": 39000,
+    "last_login_days_ago": 44,
+    "notification_response_rate": 0.11,
+    "idle_balance_days": 82,
+    "current_services_in_use": [
+      "savings_account",
+      "current_account"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-095",
+    "name": "Dev Agarwal",
+    "age": 44,
+    "city": "Visakhapatnam",
+    "occupation": "Engineer",
+    "account_balance": 90100,
+    "monthly_salary": 80000,
+    "last_login_days_ago": 50,
+    "notification_response_rate": 0.39,
+    "idle_balance_days": 78,
+    "current_services_in_use": [
+      "savings_account",
+      "education_loan",
+      "life_insurance",
+      "home_loan",
+      "mutual_fund"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "loan_amount": 420000
+      },
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 3780000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-096",
+    "name": "Harish Dubey",
+    "age": 28,
+    "city": "Ramagundam",
+    "occupation": "HR Manager",
+    "account_balance": 162200,
+    "monthly_salary": 49000,
+    "last_login_days_ago": 55,
+    "notification_response_rate": 0.49,
+    "idle_balance_days": 23,
+    "current_services_in_use": [
+      "savings_account",
+      "mutual_fund",
+      "credit_card",
+      "mobile_banking",
+      "personal_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "personal_loan",
+        "loan_amount": 280000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-097",
+    "name": "Prasad Menon",
+    "age": 31,
+    "city": "Nizamabad",
+    "occupation": "Electrician",
+    "account_balance": 92700,
+    "monthly_salary": 19000,
+    "last_login_days_ago": 36,
+    "notification_response_rate": 0.54,
+    "idle_balance_days": 28,
+    "current_services_in_use": [
+      "savings_account",
+      "recurring_deposit",
+      "current_account"
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-098",
+    "name": "Simran Pandey",
+    "age": 48,
+    "city": "Karimnagar",
+    "occupation": "Accountant",
+    "account_balance": 212500,
+    "monthly_salary": 40000,
+    "last_login_days_ago": 34,
+    "notification_response_rate": 0.86,
+    "idle_balance_days": 44,
+    "current_services_in_use": [
+      "savings_account",
+      "car_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "loan_amount": 1460000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-099",
+    "name": "Vijay Pandey",
+    "age": 24,
+    "city": "Anantapur",
+    "occupation": "HR Manager",
+    "account_balance": 153400,
+    "monthly_salary": 75000,
+    "last_login_days_ago": 38,
+    "notification_response_rate": 0.57,
+    "idle_balance_days": 37,
+    "current_services_in_use": [
+      "savings_account",
+      "home_loan",
+      "health_insurance"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 2520000
+      }
+    ]
+  },
+  {
+    "customer_id": "SBI-HYD-2024-100",
+    "name": "Naresh Menon",
+    "age": 41,
+    "city": "Anantapur",
+    "occupation": "Software Engineer",
+    "account_balance": 257600,
+    "monthly_salary": 57000,
+    "last_login_days_ago": 9,
+    "notification_response_rate": 0.53,
+    "idle_balance_days": 101,
+    "current_services_in_use": [
+      "savings_account",
+      "life_insurance",
+      "mobile_banking",
+      "health_insurance",
+      "home_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "loan_amount": 4450000
+      }
+    ]
   }
 ]
