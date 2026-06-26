@@ -13,8 +13,8 @@ llm = ChatGroq(
     model_name="llama-3.3-70b-versatile"
 )
 
-def run_action_agent(advisor_output: dict):
-    customer = load_customer_data()
+def run_action_agent(advisor_output: dict, customer_id: str = None):
+    customer = load_customer_data(customer_id)
     balance_info = analyze_balance(customer)
     best_rec = advisor_output["best_recommendation"]
 

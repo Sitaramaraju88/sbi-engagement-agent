@@ -122,3 +122,16 @@ def check_compliance(action: str) -> dict:
         return {"compliant": True, "requires_approval": True, "audit_logged": True}
     else:
         return {"compliant": False, "requires_approval": True, "audit_logged": True}
+
+def get_engagement_type(customer: dict) -> str:
+    """Dynamically calculate engagement type from raw customer data"""
+    result = detect_disengagement(customer)
+    level = result["disengagement_level"]
+    if level == "Cold Start":
+        return "Cold Start"
+    elif level == "High":
+        return "High Disengagement"
+    elif level == "Medium":
+        return "Medium Disengagement"
+    else:
+        return "Low Disengagement"

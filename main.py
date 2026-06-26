@@ -2,6 +2,8 @@ from dotenv import load_dotenv
 import json
 import os
 import sys
+import streamlit as st
+
 
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
@@ -11,14 +13,14 @@ from agents.action_agent import run_action_agent
 
 load_dotenv()
 
-def run_pipeline(verbose: bool = True) -> dict:
+def run_pipeline(verbose: bool = True, customer_id: str = None) -> dict:
     print("\n" + "="*60)
     print("   SBI AGENTIC AI - DIGITAL ENGAGEMENT SYSTEM")
     print("="*60)
 
     # Step 1 - Behavioral Agent
     print("\n[1/3] Running Behavioral Intelligence Agent...")
-    behavioral_output = run_behavioral_agent()
+    behavioral_output = run_behavioral_agent(customer_id)
     if verbose:
         print(f"✅ Disengagement Level : {behavioral_output['disengagement']['disengagement_level']}")
         print(f"✅ Disengagement Score : {behavioral_output['disengagement']['disengagement_score']}/100")
@@ -27,7 +29,7 @@ def run_pipeline(verbose: bool = True) -> dict:
 
     # Step 2 - Advisor Agent
     print("\n[2/3] Running Proactive Advisor Agent...")
-    advisor_output = run_advisor_agent(behavioral_output)
+    advisor_output = run_advisor_agent(behavioral_output, customer_id)
     if verbose:
         print(f"✅ Recommendations Found : {len(advisor_output['recommendations'])}")
         if advisor_output['best_recommendation']:
@@ -37,7 +39,7 @@ def run_pipeline(verbose: bool = True) -> dict:
 
     # Step 3 - Action Agent
     print("\n[3/3] Running Autonomous Action Agent...")
-    action_output = run_action_agent(advisor_output)
+    action_output = run_action_agent(advisor_output, customer_id)
     if verbose:
         print(f"✅ Action Status  : {action_output['status']}")
         print(f"✅ Compliant      : {action_output['compliance']['compliant']}")
