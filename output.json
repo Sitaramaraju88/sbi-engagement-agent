@@ -1,0 +1,76 @@
+{
+  "behavioral": {
+    "agent": "Behavioral Intelligence Agent",
+    "customer_name": "Rahul Sharma",
+    "disengagement": {
+      "disengagement_score": 100,
+      "disengagement_level": "High",
+      "signals": [
+        "No login for 12 days",
+        "Balance idle for 45 days",
+        "Low notification response rate",
+        "Using fewer than 3 SBI products"
+      ]
+    },
+    "balance_info": {
+      "balance": 85000,
+      "recurring_expenses": 18000,
+      "reserve_buffer": 27000,
+      "investable_surplus": 58000
+    },
+    "analysis": "Rahul Sharma's disengagement score is 100/100, indicating a high level of disengagement, with no login activity for 12 days and an idle balance for 45 days. His overall interaction with SBI services has been minimal. \n\nThe top 2 risk factors are: \n1. Prolonged inactivity (45 days of idle balance and 12 days since last login)\n2. Low engagement with SBI services (using fewer than 3 SBI products and low notification response rate)\n\nThe next agent should focus on re-establishing a connection with Rahul, understanding the reasons behind his inactivity, and exploring ways to re-engage him with SBI's services, addressing his potential needs and concerns."
+  },
+  "advisor": {
+    "agent": "Proactive Advisor Agent",
+    "recommendations": [
+      {
+        "action": "Open Recurring Deposit",
+        "amount": 5000,
+        "reason": "Build emergency fund \u2014 3 months expenses target",
+        "tier": "Tier 2 \u2014 requires your approval"
+      },
+      {
+        "action": "Start SIP in Balanced Mutual Fund",
+        "amount": 3000,
+        "reason": "Idle surplus detected \u2014 moderate risk SIP suits your profile",
+        "tier": "Tier 2 \u2014 requires your approval"
+      },
+      {
+        "action": "Auto-sweep excess to FD",
+        "amount": 29000,
+        "reason": "\u20b958000 idle for 45 days \u2014 FD gives better returns",
+        "tier": "Tier 1 \u2014 informational only"
+      }
+    ],
+    "best_recommendation": {
+      "action": "Open Recurring Deposit",
+      "amount": 5000,
+      "reason": "Build emergency fund \u2014 3 months expenses target",
+      "tier": "Tier 2 \u2014 requires your approval"
+    },
+    "personalized_message": "Hi Rahul, I see you have an idle surplus. I recommend starting a SIP in a Balanced Mutual Fund (\u20b93000) to grow your wealth. This suits your moderate risk appetite and financial goals. This requires your approval (Tier 2). Let me know if you're interested."
+  },
+  "action": {
+    "agent": "Autonomous Action Agent",
+    "action": "Open Recurring Deposit",
+    "amount": 5000,
+    "status": "PENDING_APPROVAL",
+    "compliance": {
+      "compliant": true,
+      "requires_approval": true,
+      "audit_logged": true
+    },
+    "audit_log": [
+      {
+        "action": "Open Recurring Deposit",
+        "amount": 5000,
+        "status": "PENDING_APPROVAL",
+        "compliant": true,
+        "requires_approval": true,
+        "audit_logged": true,
+        "timestamp": "2026-06-27 09:00:00"
+      }
+    ],
+    "status_update": "Recurring Deposit of \u20b95000 is pending approval. Compliance check passed. Audit trail maintained. Please approve to proceed."
+  }
+}

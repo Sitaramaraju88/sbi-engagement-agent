@@ -1,0 +1,21 @@
+{
+  "customer_id": "SBI_001",
+  "name": "Rahul Sharma",
+  "age": 28,
+  "city": "Hyderabad",
+  "account_balance": 85000,
+  "monthly_salary": 45000,
+  "last_login_days_ago": 12,
+  "transactions": [
+    {"date": "2026-06-01", "type": "debit", "category": "food", "amount": 2500},
+    {"date": "2026-06-05", "type": "debit", "category": "rent", "amount": 15000},
+    {"date": "2026-06-10", "type": "debit", "category": "utilities", "amount": 3000},
+    {"date": "2026-06-15", "type": "credit", "category": "salary", "amount": 45000},
+    {"date": "2026-06-20", "type": "debit", "category": "shopping", "amount": 5000}
+  ],
+  "existing_products": ["savings_account", "debit_card"],
+  "risk_appetite": "moderate",
+  "financial_goals": ["emergency_fund", "retirement"],
+  "notification_response_rate": 0.2,
+  "idle_balance_days": 45
+}
