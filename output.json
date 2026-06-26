@@ -18,7 +18,7 @@
       "reserve_buffer": 27000,
       "investable_surplus": 58000
     },
-    "analysis": "Rahul Sharma's disengagement score is 100/100, indicating a high level of disengagement, with no login activity for 12 days and an idle balance for 45 days. His overall interaction with SBI services has been minimal. \n\nThe top 2 risk factors are: \n1. Prolonged inactivity (45 days of idle balance and 12 days since last login)\n2. Low engagement with SBI services (using fewer than 3 SBI products and low notification response rate)\n\nThe next agent should focus on re-establishing a connection with Rahul, understanding the reasons behind his inactivity, and exploring ways to re-engage him with SBI's services, addressing his potential needs and concerns."
+    "analysis": "**Disengagement Status:** Rahul Sharma's account shows high disengagement, with no login for 12 days and an idle balance for 45 days. His overall disengagement score is 100/100, indicating a high risk of account inactivity. \n\n**Top 2 Risk Factors:** \n1. Prolonged period of inactivity (45 days) \n2. Infrequent logins (no login for 12 days)\n\n**Next Steps:** The next agent should focus on re-establishing contact with Rahul, understanding the reasons behind his inactivity, and exploring ways to re-engage him with his account, addressing any potential concerns or issues he may be facing."
   },
   "advisor": {
     "agent": "Proactive Advisor Agent",
@@ -48,7 +48,7 @@
       "reason": "Build emergency fund \u2014 3 months expenses target",
       "tier": "Tier 2 \u2014 requires your approval"
     },
-    "personalized_message": "Hi Rahul, I see you have an idle surplus. I recommend starting a SIP in a Balanced Mutual Fund (\u20b93000) to grow your wealth. This suits your moderate risk appetite and financial goals. This requires your approval (Tier 2). Let me know if you're interested."
+    "personalized_message": "Hi Rahul, I noticed you've had an idle balance for 45 days. Consider opening a Recurring Deposit for \u20b95000 to build your emergency fund. This suits your moderate risk appetite and financial goals. This requires your approval (Tier 2)."
   },
   "action": {
     "agent": "Autonomous Action Agent",
@@ -71,6 +71,6 @@
         "timestamp": "2026-06-27 09:00:00"
       }
     ],
-    "status_update": "Recurring Deposit of \u20b95000 is pending approval. Compliance check passed. Audit trail maintained. Please approve to proceed."
+    "status_update": "Recurring Deposit of \u20b95000 pending approval. Compliance check passed. Audit trail maintained. Approval required. Please approve to proceed."
   }
 }
