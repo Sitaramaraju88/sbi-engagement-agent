@@ -5,6 +5,7 @@ import time
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from main import run_pipeline
 from tools.financial_tools import load_all_customers, get_engagement_type
+
 @st.cache_data(ttl=300)
 def run_pipeline_cached(customer_id: str = None) -> dict:
     return run_pipeline(verbose=False, customer_id=customer_id)
@@ -41,13 +42,6 @@ st.markdown("""
         text-align: center;
         margin-bottom: 30px;
     }
-    .customer-card {
-        background-color: #f8f9fa;
-        padding: 15px;
-        border-radius: 10px;
-        border: 1px solid #dee2e6;
-        margin-bottom: 10px;
-    }
     .filter-section {
         background-color: white;
         padding: 20px;
@@ -78,13 +72,15 @@ with st.sidebar:
     st.divider()
     st.markdown("### Agent Pipeline")
     st.markdown("1. 🔍 Behavioral Intelligence")
-    st.markdown("2. 💡 Proactive Advisor")
-    st.markdown("3. ⚡ Autonomous Action")
+    st.markdown("2. 💳 Loan Optimizer")
+    st.markdown("3. 💡 Proactive Advisor")
+    st.markdown("4. ⚡ Autonomous Action")
     st.divider()
     st.markdown("### AI Capabilities")
     st.markdown("🧠 LLM Risk Appetite Detection")
     st.markdown("📊 Dynamic Engagement Scoring")
     st.markdown("💡 Personalized Recommendations")
+    st.markdown("💳 Loan payback Optimization");
     st.markdown("⚡ Autonomous Action Execution")
     st.divider()
     st.markdown("### Compliance")
@@ -99,12 +95,10 @@ with st.sidebar:
 st.markdown("### 🔎 Customer Selector")
 st.caption("💡 Engagement types are **dynamically calculated by the AI** from raw customer signals — nothing is pre-labeled.")
 
-# Load all customers and calculate engagement dynamically
 all_customers = load_all_customers()
 for c in all_customers:
     c["_engagement_type"] = get_engagement_type(c)
 
-# Summary stats
 total = len(all_customers)
 high = sum(1 for c in all_customers if c["_engagement_type"] == "High Disengagement")
 medium = sum(1 for c in all_customers if c["_engagement_type"] == "Medium Disengagement")
@@ -120,7 +114,6 @@ col5.metric("🔵 Cold Start", cold)
 
 st.divider()
 
-# Filter section
 st.markdown('<div class="filter-section">', unsafe_allow_html=True)
 st.markdown("#### 🗂️ Filter & Select Customer")
 
@@ -136,7 +129,6 @@ with col1:
     ]
     selected_filter = st.selectbox("Filter by Engagement Type", engagement_options)
 
-# Map filter to actual engagement type
 filter_map = {
     "All Customers": None,
     "🔴 High Disengagement": "High Disengagement",
@@ -146,18 +138,17 @@ filter_map = {
 }
 filter_value = filter_map[selected_filter]
 
-# Apply filter
 filtered_customers = all_customers if not filter_value else [
     c for c in all_customers if c["_engagement_type"] == filter_value
 ]
 
-# Customer table
 st.markdown(f"**Showing {len(filtered_customers)} customer(s):**")
 table_data = []
 for c in filtered_customers:
     emoji = "🔴" if c["_engagement_type"] == "High Disengagement" else \
             "🟡" if c["_engagement_type"] == "Medium Disengagement" else \
             "🔵" if c["_engagement_type"] == "Cold Start" else "🟢"
+    has_loans = "loans" in c and len(c["loans"]) > 0
     table_data.append({
         "Customer ID": c["customer_id"],
         "Name": c["name"],
@@ -165,12 +156,13 @@ for c in filtered_customers:
         "City": c["city"],
         "Occupation": c["occupation"],
         "Balance": f"₹{c['account_balance']:,}",
+        "Idle Balance": f"₹{c['idle_balance_amount']:,}",
         "Last Login": f"{c['last_login_days_ago']} days ago",
+        "Has Loans": "Yes 🏦" if has_loans else "No",
         "AI Detected Engagement": f"{emoji} {c['_engagement_type']}"
     })
 st.dataframe(table_data, use_container_width=True)
 
-# Customer dropdown
 with col2:
     if not filtered_customers:
         st.warning("No customers match this filter.")
@@ -188,13 +180,12 @@ st.markdown('</div>', unsafe_allow_html=True)
 # Selected customer quick info
 selected = next(c for c in all_customers if c["customer_id"] == selected_customer_id)
 st.markdown("#### 👤 Selected Customer Preview")
-col1, col2, col3, col4, col5, col6 = st.columns(6)
+col1, col2, col3, col4, col5 = st.columns(5)
 col1.metric("Customer ID", selected["customer_id"])
 col2.metric("Name", selected["name"])
 col3.metric("Age", selected["age"])
-col4.metric("City", selected["city"])
-col5.metric("Balance", f"₹{selected['account_balance']:,}")
-col6.metric("AI Engagement", selected["_engagement_type"])
+col4.metric("Balance", f"₹{selected['account_balance']:,}")
+col5.metric("Idle Balance", f"₹{selected['idle_balance_amount']:,}")
 
 st.divider()
 
@@ -228,12 +219,16 @@ if run:
 
     # ── Customer Profile ──
     st.markdown("### 👤 Customer Profile")
-    col1, col2, col3, col4, col5 = st.columns(5)
+    col1, col2, col3, col4, col5, col6 = st.columns(6)
     col1.metric("Name", behavioral["customer_name"])
     col2.metric("Account Balance", f"₹{behavioral['balance_info']['balance']:,}")
-    col3.metric("Reserve Buffer", f"₹{behavioral['balance_info']['reserve_buffer']:,}")
+    col3.metric("Idle Balance", f"₹{behavioral['balance_info']['idle_balance']:,}")
     col4.metric("Investable Surplus", f"₹{behavioral['balance_info']['investable_surplus']:,}")
-    col5.metric("AI Risk Appetite", behavioral["risk_appetite"].upper())
+    col5.metric("EMI Burden", f"{int(behavioral['balance_info']['emi_to_salary_ratio']*100)}% of salary")
+    col6.metric("AI Risk Appetite", behavioral["risk_appetite"].upper())
+
+    if behavioral['balance_info']['loan_count'] > 0:
+        st.markdown(f"**🏦 Active Loans: {behavioral['balance_info']['loan_count']} loan(s) | Total Monthly EMI: ₹{behavioral['balance_info']['total_emi']:,} | Total Outstanding: ₹{behavioral['balance_info']['total_outstanding']:,}**")
 
     st.divider()
 
@@ -246,11 +241,12 @@ if run:
     score = behavioral["disengagement"]["disengagement_score"]
     color = "🔴" if level == "High" else "🟡" if level == "Medium" else "🔵" if level == "Cold Start" else "🟢"
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
     col1.metric("Disengagement Level", f"{color} {level}")
     col2.metric("Disengagement Score", f"{score}/100")
     col3.metric("Last Login", f"{selected['last_login_days_ago']} days ago")
     col4.metric("Idle Balance Days", f"{selected['idle_balance_days']} days")
+    col5.metric("Notification Rate", f"{int(selected['notification_response_rate']*100)}%")
 
     st.markdown("**⚠️ Risk Signals Detected:**")
     if behavioral["disengagement"]["signals"]:
@@ -265,9 +261,45 @@ if run:
 
     st.divider()
 
-    # ── Agent 2 ──
+    st.divider()
+
+    # ── Loan Optimizer Agent ──
+    loan = result["loan"]
     st.markdown('<div class="agent-card">', unsafe_allow_html=True)
-    st.markdown("### 💡 Agent 2 — Proactive Advisor Agent")
+    st.markdown("### 💳 Agent 2 — Loan Optimizer Agent")
+    st.caption("Plans optimal loan repayment strategy based on salary and outstanding debt")
+
+    if loan["has_loans"]:
+        ls = loan["loan_summary"]
+        col1, col2, col3, col4, col5 = st.columns(5)
+        col1.metric("Total Loans", ls["total_loans"])
+        col2.metric("Total Monthly EMI", f"₹{ls['total_emi']:,}")
+        col3.metric("Total Outstanding", f"₹{ls['total_outstanding']:,}")
+        col4.metric("EMI Burden", f"{int(ls['emi_to_salary_ratio']*100)}% of salary")
+        col5.metric("Burden Level", ls["burden_level"])
+
+        st.markdown("**📌 Quick Insights:**")
+        for tip in loan["optimization_tips"]:
+            st.info(f"💡 {tip}")
+
+        with st.expander("📋 View Full Repayment Plan"):
+            st.write(loan["repayment_plan"])
+
+        # Individual loan breakdown
+        st.markdown("**🏦 Individual Loan Breakdown:**")
+        for l in loan["loans"]:
+            col1, col2, col3, col4 = st.columns(4)
+            col1.metric("Loan Type", l["loan_type"].replace("_", " ").title())
+            col2.metric("Outstanding", f"₹{l['outstanding_amount']:,}")
+            col3.metric("Monthly EMI", f"₹{l['emi']:,}")
+            col4.metric("Tenure Left", f"{l['tenure_months']} months")
+    else:
+        st.success(f"✅ {loan['message']}")
+
+    st.markdown('</div>', unsafe_allow_html=True)
+    # ── Agent 3 ──
+    st.markdown('<div class="agent-card">', unsafe_allow_html=True)
+    st.markdown("### 💡 Agent 3 — Proactive Advisor Agent")
     st.caption("Generates personalized recommendations based on AI-calculated risk appetite")
 
     st.info(f"💬 **Personalized Message to {behavioral['customer_name']}:**\n\n{advisor['personalized_message']}")
@@ -285,9 +317,9 @@ if run:
 
     st.divider()
 
-    # ── Agent 3 ──
+    # ── Agent 4 ──
     st.markdown('<div class="agent-card">', unsafe_allow_html=True)
-    st.markdown("### ⚡ Agent 3 — Autonomous Action Agent")
+    st.markdown("### ⚡ Agent 4 — Autonomous Action Agent")
     st.caption("Executes compliant actions autonomously or routes for customer approval")
 
     status = action["status"]

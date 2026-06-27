@@ -1,62 +1,72 @@
 {
   "behavioral": {
     "agent": "Behavioral Intelligence Agent",
-    "customer_name": "Rahul Sharma",
+    "customer_name": "Bhargavi Mehta",
     "customer_id": "SBI-HYD-2024-001",
     "disengagement": {
-      "disengagement_score": 100,
-      "disengagement_level": "High",
+      "disengagement_score": 30,
+      "disengagement_level": "Medium",
       "signals": [
-        "No login for 12 days",
-        "Balance idle for 45 days",
-        "Low notification response rate",
-        "Using fewer than 3 SBI products"
+        "No login for 70 days"
       ]
     },
     "balance_info": {
-      "balance": 85000,
-      "recurring_expenses": 18000,
-      "reserve_buffer": 27000,
-      "investable_surplus": 58000
+      "balance": 176200,
+      "idle_balance": 98000,
+      "total_emi": 0,
+      "total_outstanding": 0,
+      "reserve_buffer": 20400,
+      "investable_surplus": 77600,
+      "emi_to_salary_ratio": 0.0,
+      "loan_count": 0
     },
     "risk_appetite": "moderate",
-    "analysis": "**Disengagement Status:** Rahul Sharma has been inactive for 12 days, with an idle balance of 45 days, indicating a high disengagement level. His overall disengagement score is 100/100, suggesting a significant risk of account dormancy.\n\n**Top 2 Risk Factors:** \n1. Prolonged inactivity (12 days since last login and 45 days of idle balance)\n2. Low engagement with SBI services (using fewer than 3 SBI products and low notification response rate)\n\n**Risk Appetite Confirmation:** The calculated moderate risk appetite seems plausible, given Rahul's age (28) and occupation (Software Engineer), which may indicate a certain level of financial stability and awareness. However, his current inactivity and idle balance suggest a need for re-engagement and potential re-assessment of his investment strategy.\n\n**Advisor Focus:** The Advisor Agent should focus on re-establishing contact with Rahul, understanding the reasons behind his inactivity, and exploring ways to re-engage him with his finances, potentially discussing investment options or financial goals that align with his moderate risk appetite and current situation."
+    "analysis": "**Summary of Financial Health:** Bhargavi Mehta has a stable financial position with a sizable account balance of \u20b9176,200 and no outstanding loans. Her investable surplus of \u20b977,600 indicates potential for growth. However, a significant portion of her balance (\u20b998,000) has been idle for 11 days.\n\n**Disengagement Risk Factors:** The top two disengagement risk factors are (1) no login for 70 days, indicating a lack of engagement with her account, and (2) a relatively low notification response rate of 0.59, suggesting she may not be actively monitoring her financial communications.\n\n**Loan Burden:** Fortunately, Bhargavi has no active loans, which means she does not have any loan burden or EMI obligations.\n\n**Risk Appetite:** Based on the data, her moderate risk appetite seems accurate, as she has a stable income and no loans, but also a significant idle balance, suggesting she may be cautious with her investments.\n\n**Guidance for Advisor Agent:** The Advisor Agent should focus on re-engaging Bhargavi, understanding the reasons behind her inactivity, and exploring ways to utilize her investable surplus effectively, while also ensuring she is aware of and comfortable with her current financial situation."
+  },
+  "loan": {
+    "agent": "Loan Optimizer Agent",
+    "has_loans": false,
+    "status": "NO_LOANS",
+    "message": "Bhargavi Mehta has no active loans. Full salary available for savings and investments.",
+    "loan_analysis": null,
+    "repayment_plan": null,
+    "optimization_tips": []
   },
   "advisor": {
     "agent": "Proactive Advisor Agent",
     "recommendations": [
       {
-        "action": "Open Recurring Deposit",
-        "amount": 5000,
-        "reason": "Build emergency fund \u2014 3 months expenses target",
+        "action": "Get SBI Health Insurance",
+        "amount": 2040,
+        "reason": "No health insurance detected. Medical emergencies can wipe out savings.",
         "tier": "Tier 2 \u2014 requires your approval"
       },
       {
         "action": "Start SIP in Balanced Mutual Fund",
-        "amount": 2900,
-        "reason": "Idle surplus detected \u2014 SIP suits your risk profile",
+        "amount": 5000,
+        "reason": "Idle surplus detected. Balanced SIP suits your moderate risk profile.",
         "tier": "Tier 2 \u2014 requires your approval"
       },
       {
-        "action": "Auto-sweep excess to FD",
-        "amount": 29000,
-        "reason": "\u20b958000 idle for 45 days \u2014 FD gives better returns",
+        "action": "Auto-sweep Idle Balance to FD",
+        "amount": 38800,
+        "reason": "\u20b977,600 sitting idle. Auto-sweep to FD earns better returns automatically.",
         "tier": "Tier 1 \u2014 informational only"
       }
     ],
     "best_recommendation": {
-      "action": "Open Recurring Deposit",
-      "amount": 5000,
-      "reason": "Build emergency fund \u2014 3 months expenses target",
+      "action": "Get SBI Health Insurance",
+      "amount": 2040,
+      "reason": "No health insurance detected. Medical emergencies can wipe out savings.",
       "tier": "Tier 2 \u2014 requires your approval"
     },
     "risk_appetite": "moderate",
-    "personalized_message": "Hi Rahul, I noticed you've been inactive for a while. Consider opening a Recurring Deposit for \u20b95000 to build your emergency fund. This suits your moderate risk appetite and requires your approval (Tier 2). Let's discuss how to get started."
+    "personalized_message": "Hi Bhargavi, I noticed you don't have health insurance. I recommend getting SBI Health Insurance (\u20b92040) to protect your savings from medical emergencies. This suits your situation and requires your approval (Tier 2)."
   },
   "action": {
     "agent": "Autonomous Action Agent",
-    "action": "Open Recurring Deposit",
-    "amount": 5000,
+    "action": "Get SBI Health Insurance",
+    "amount": 2040,
     "status": "PENDING_APPROVAL",
     "compliance": {
       "compliant": true,
@@ -65,15 +75,19 @@
     },
     "audit_log": [
       {
-        "action": "Open Recurring Deposit",
-        "amount": 5000,
+        "customer_id": "SBI-HYD-2024-001",
+        "customer_name": "Bhargavi Mehta",
+        "action": "Get SBI Health Insurance",
+        "amount": 2040,
         "status": "PENDING_APPROVAL",
         "compliant": true,
         "requires_approval": true,
         "audit_logged": true,
-        "timestamp": "2026-06-27 09:00:00"
+        "emi_to_salary_ratio": 0.0,
+        "investable_surplus": 77600,
+        "timestamp": "2026-06-27 16:33:44"
       }
     ],
-    "status_update": "Rahul, your \u20b95000 Recurring Deposit is pending approval. Compliance check passed. Audit trail maintained. Please approve to proceed."
+    "status_update": "Action pending: SBI Health Insurance. Compliance check passed. Status: PENDING_APPROVAL. Please approve \u20b92,040 payment. Your \u20b920,400 safety buffer is protected. Audit trail maintained."
   }
 }

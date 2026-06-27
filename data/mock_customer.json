@@ -13,7 +13,8 @@
     "current_services_in_use": [
       "savings_account",
       "life_insurance"
-    ]
+    ],
+    "idle_balance_amount": 98000
   },
   {
     "customer_id": "SBI-HYD-2024-002",
@@ -28,10 +29,9 @@
     "idle_balance_days": 13,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit",
-      "credit_card",
-      "fixed_deposit"
-    ]
+      "credit_card"
+    ],
+    "idle_balance_amount": 173500
   },
   {
     "customer_id": "SBI-HYD-2024-003",
@@ -46,9 +46,9 @@
     "idle_balance_days": 109,
     "current_services_in_use": [
       "savings_account",
-      "net_banking",
-      "recurring_deposit"
-    ]
+      "net_banking"
+    ],
+    "idle_balance_amount": 63800
   },
   {
     "customer_id": "SBI-HYD-2024-004",
@@ -62,20 +62,9 @@
     "notification_response_rate": 0.64,
     "idle_balance_days": 118,
     "current_services_in_use": [
-      "savings_account",
-      "car_loan",
-      "personal_loan"
+      "savings_account"
     ],
-    "loans": [
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 830000
-      },
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 220000
-      }
-    ]
+    "idle_balance_amount": 108900
   },
   {
     "customer_id": "SBI-HYD-2024-005",
@@ -90,21 +79,9 @@
     "idle_balance_days": 11,
     "current_services_in_use": [
       "savings_account",
-      "home_loan",
-      "fixed_deposit",
-      "credit_card",
-      "education_loan"
+      "credit_card"
     ],
-    "loans": [
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 3160000
-      },
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 700000
-      }
-    ]
+    "idle_balance_amount": 108100
   },
   {
     "customer_id": "SBI-HYD-2024-006",
@@ -119,15 +96,9 @@
     "idle_balance_days": 117,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
       "net_banking"
     ],
-    "loans": [
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 610000
-      }
-    ]
+    "idle_balance_amount": 14100
   },
   {
     "customer_id": "SBI-HYD-2024-007",
@@ -142,17 +113,10 @@
     "idle_balance_days": 51,
     "current_services_in_use": [
       "savings_account",
-      "fixed_deposit",
-      "education_loan",
       "health_insurance",
       "mobile_banking"
     ],
-    "loans": [
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 1930000
-      }
-    ]
+    "idle_balance_amount": 160400
   },
   {
     "customer_id": "SBI-HYD-2024-008",
@@ -168,16 +132,9 @@
     "current_services_in_use": [
       "savings_account",
       "net_banking",
-      "personal_loan",
-      "fixed_deposit",
       "debit_card"
     ],
-    "loans": [
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 110000
-      }
-    ]
+    "idle_balance_amount": 15100
   },
   {
     "customer_id": "SBI-HYD-2024-009",
@@ -193,7 +150,8 @@
     "current_services_in_use": [
       "savings_account",
       "debit_card"
-    ]
+    ],
+    "idle_balance_amount": 31900
   },
   {
     "customer_id": "SBI-HYD-2024-010",
@@ -208,15 +166,9 @@
     "idle_balance_days": 108,
     "current_services_in_use": [
       "savings_account",
-      "current_account",
-      "education_loan"
+      "current_account"
     ],
-    "loans": [
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 810000
-      }
-    ]
+    "idle_balance_amount": 291000
   },
   {
     "customer_id": "SBI-HYD-2024-011",
@@ -232,7 +184,8 @@
     "current_services_in_use": [
       "savings_account",
       "debit_card"
-    ]
+    ],
+    "idle_balance_amount": 289200
   },
   {
     "customer_id": "SBI-HYD-2024-012",
@@ -247,10 +200,9 @@
     "idle_balance_days": 26,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit",
-      "mutual_fund",
-      "fixed_deposit"
-    ]
+      "mutual_fund"
+    ],
+    "idle_balance_amount": 788600
   },
   {
     "customer_id": "SBI-HYD-2024-013",
@@ -264,15 +216,9 @@
     "notification_response_rate": 0.25,
     "idle_balance_days": 87,
     "current_services_in_use": [
-      "savings_account",
-      "home_loan"
+      "savings_account"
     ],
-    "loans": [
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 5490000
-      }
-    ]
+    "idle_balance_amount": 113800
   },
   {
     "customer_id": "SBI-HYD-2024-014",
@@ -286,15 +232,9 @@
     "notification_response_rate": 0.47,
     "idle_balance_days": 109,
     "current_services_in_use": [
-      "savings_account",
-      "personal_loan"
+      "savings_account"
     ],
-    "loans": [
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 340000
-      }
-    ]
+    "idle_balance_amount": 24500
   },
   {
     "customer_id": "SBI-HYD-2024-015",
@@ -308,9 +248,9 @@
     "notification_response_rate": 0.96,
     "idle_balance_days": 74,
     "current_services_in_use": [
-      "savings_account",
-      "recurring_deposit"
-    ]
+      "savings_account"
+    ],
+    "idle_balance_amount": 397200
   },
   {
     "customer_id": "SBI-HYD-2024-016",
@@ -326,15 +266,9 @@
     "current_services_in_use": [
       "savings_account",
       "mutual_fund",
-      "home_loan",
       "life_insurance"
     ],
-    "loans": [
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 6630000
-      }
-    ]
+    "idle_balance_amount": 36600
   },
   {
     "customer_id": "SBI-HYD-2024-017",
@@ -353,7 +287,8 @@
       "mobile_banking",
       "health_insurance",
       "credit_card"
-    ]
+    ],
+    "idle_balance_amount": 56600
   },
   {
     "customer_id": "SBI-HYD-2024-018",
@@ -370,7 +305,8 @@
       "savings_account",
       "net_banking",
       "health_insurance"
-    ]
+    ],
+    "idle_balance_amount": 260300
   },
   {
     "customer_id": "SBI-HYD-2024-019",
@@ -387,7 +323,8 @@
       "savings_account",
       "mobile_banking",
       "life_insurance"
-    ]
+    ],
+    "idle_balance_amount": 50700
   },
   {
     "customer_id": "SBI-HYD-2024-020",
@@ -406,7 +343,8 @@
       "mutual_fund",
       "health_insurance",
       "current_account"
-    ]
+    ],
+    "idle_balance_amount": 77200
   },
   {
     "customer_id": "SBI-HYD-2024-021",
@@ -422,7 +360,8 @@
     "current_services_in_use": [
       "savings_account",
       "debit_card"
-    ]
+    ],
+    "idle_balance_amount": 213500
   },
   {
     "customer_id": "SBI-HYD-2024-022",
@@ -437,9 +376,9 @@
     "idle_balance_days": 19,
     "current_services_in_use": [
       "savings_account",
-      "fixed_deposit",
       "current_account"
-    ]
+    ],
+    "idle_balance_amount": 82600
   },
   {
     "customer_id": "SBI-HYD-2024-023",
@@ -455,7 +394,8 @@
     "current_services_in_use": [
       "savings_account",
       "net_banking"
-    ]
+    ],
+    "idle_balance_amount": 508800
   },
   {
     "customer_id": "SBI-HYD-2024-024",
@@ -469,9 +409,9 @@
     "notification_response_rate": 0.75,
     "idle_balance_days": 31,
     "current_services_in_use": [
-      "savings_account",
-      "recurring_deposit"
-    ]
+      "savings_account"
+    ],
+    "idle_balance_amount": 200900
   },
   {
     "customer_id": "SBI-HYD-2024-025",
@@ -486,17 +426,11 @@
     "idle_balance_days": 28,
     "current_services_in_use": [
       "savings_account",
-      "car_loan",
       "net_banking",
       "current_account",
       "debit_card"
     ],
-    "loans": [
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 800000
-      }
-    ]
+    "idle_balance_amount": 139200
   },
   {
     "customer_id": "SBI-HYD-2024-026",
@@ -511,9 +445,9 @@
     "idle_balance_days": 35,
     "current_services_in_use": [
       "savings_account",
-      "fixed_deposit",
       "mobile_banking"
-    ]
+    ],
+    "idle_balance_amount": 478600
   },
   {
     "customer_id": "SBI-HYD-2024-027",
@@ -529,7 +463,8 @@
     "current_services_in_use": [
       "savings_account",
       "credit_card"
-    ]
+    ],
+    "idle_balance_amount": 78600
   },
   {
     "customer_id": "SBI-HYD-2024-028",
@@ -545,7 +480,8 @@
     "current_services_in_use": [
       "savings_account",
       "credit_card"
-    ]
+    ],
+    "idle_balance_amount": 29300
   },
   {
     "customer_id": "SBI-HYD-2024-029",
@@ -562,7 +498,8 @@
       "savings_account",
       "life_insurance",
       "credit_card"
-    ]
+    ],
+    "idle_balance_amount": 12800
   },
   {
     "customer_id": "SBI-HYD-2024-030",
@@ -578,16 +515,9 @@
     "current_services_in_use": [
       "savings_account",
       "health_insurance",
-      "home_loan",
-      "mutual_fund",
-      "recurring_deposit"
+      "mutual_fund"
     ],
-    "loans": [
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 2720000
-      }
-    ]
+    "idle_balance_amount": 201000
   },
   {
     "customer_id": "SBI-HYD-2024-031",
@@ -602,16 +532,9 @@
     "idle_balance_days": 110,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit",
-      "home_loan",
       "debit_card"
     ],
-    "loans": [
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 6160000
-      }
-    ]
+    "idle_balance_amount": 61000
   },
   {
     "customer_id": "SBI-HYD-2024-032",
@@ -628,7 +551,8 @@
       "savings_account",
       "health_insurance",
       "credit_card"
-    ]
+    ],
+    "idle_balance_amount": 7500
   },
   {
     "customer_id": "SBI-HYD-2024-033",
@@ -645,7 +569,8 @@
       "savings_account",
       "mobile_banking",
       "debit_card"
-    ]
+    ],
+    "idle_balance_amount": 67800
   },
   {
     "customer_id": "SBI-HYD-2024-034",
@@ -661,20 +586,9 @@
     "current_services_in_use": [
       "savings_account",
       "current_account",
-      "home_loan",
-      "health_insurance",
-      "car_loan"
+      "health_insurance"
     ],
-    "loans": [
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 6790000
-      },
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 1350000
-      }
-    ]
+    "idle_balance_amount": 38700
   },
   {
     "customer_id": "SBI-HYD-2024-035",
@@ -691,7 +605,8 @@
       "savings_account",
       "life_insurance",
       "mobile_banking"
-    ]
+    ],
+    "idle_balance_amount": 48000
   },
   {
     "customer_id": "SBI-HYD-2024-036",
@@ -706,15 +621,9 @@
     "idle_balance_days": 29,
     "current_services_in_use": [
       "savings_account",
-      "car_loan",
       "mutual_fund"
     ],
-    "loans": [
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 310000
-      }
-    ]
+    "idle_balance_amount": 22300
   },
   {
     "customer_id": "SBI-HYD-2024-037",
@@ -730,9 +639,9 @@
     "current_services_in_use": [
       "savings_account",
       "mutual_fund",
-      "recurring_deposit",
       "health_insurance"
-    ]
+    ],
+    "idle_balance_amount": 21800
   },
   {
     "customer_id": "SBI-HYD-2024-038",
@@ -747,16 +656,9 @@
     "idle_balance_days": 32,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
-      "mobile_banking",
-      "recurring_deposit"
+      "mobile_banking"
     ],
-    "loans": [
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 1980000
-      }
-    ]
+    "idle_balance_amount": 21400
   },
   {
     "customer_id": "SBI-HYD-2024-039",
@@ -772,9 +674,9 @@
     "current_services_in_use": [
       "savings_account",
       "debit_card",
-      "life_insurance",
-      "fixed_deposit"
-    ]
+      "life_insurance"
+    ],
+    "idle_balance_amount": 15800
   },
   {
     "customer_id": "SBI-HYD-2024-040",
@@ -789,15 +691,9 @@
     "idle_balance_days": 106,
     "current_services_in_use": [
       "savings_account",
-      "personal_loan",
       "life_insurance"
     ],
-    "loans": [
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 200000
-      }
-    ]
+    "idle_balance_amount": 162000
   },
   {
     "customer_id": "SBI-HYD-2024-041",
@@ -812,10 +708,10 @@
     "idle_balance_days": 8,
     "current_services_in_use": [
       "savings_account",
-      "fixed_deposit",
       "credit_card",
       "mutual_fund"
-    ]
+    ],
+    "idle_balance_amount": 2700
   },
   {
     "customer_id": "SBI-HYD-2024-042",
@@ -831,7 +727,8 @@
     "current_services_in_use": [
       "savings_account",
       "health_insurance"
-    ]
+    ],
+    "idle_balance_amount": 184500
   },
   {
     "customer_id": "SBI-HYD-2024-043",
@@ -849,7 +746,8 @@
       "mutual_fund",
       "life_insurance",
       "mobile_banking"
-    ]
+    ],
+    "idle_balance_amount": 2600
   },
   {
     "customer_id": "SBI-HYD-2024-044",
@@ -865,7 +763,8 @@
     "current_services_in_use": [
       "savings_account",
       "debit_card"
-    ]
+    ],
+    "idle_balance_amount": 10800
   },
   {
     "customer_id": "SBI-HYD-2024-045",
@@ -881,9 +780,9 @@
     "current_services_in_use": [
       "savings_account",
       "debit_card",
-      "net_banking",
-      "recurring_deposit"
-    ]
+      "net_banking"
+    ],
+    "idle_balance_amount": 8000
   },
   {
     "customer_id": "SBI-HYD-2024-046",
@@ -898,20 +797,9 @@
     "idle_balance_days": 77,
     "current_services_in_use": [
       "savings_account",
-      "car_loan",
-      "life_insurance",
-      "personal_loan"
+      "life_insurance"
     ],
-    "loans": [
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 360000
-      },
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 490000
-      }
-    ]
+    "idle_balance_amount": 37000
   },
   {
     "customer_id": "SBI-HYD-2024-047",
@@ -925,15 +813,9 @@
     "notification_response_rate": 0.13,
     "idle_balance_days": 22,
     "current_services_in_use": [
-      "savings_account",
-      "car_loan"
+      "savings_account"
     ],
-    "loans": [
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 1340000
-      }
-    ]
+    "idle_balance_amount": 173700
   },
   {
     "customer_id": "SBI-HYD-2024-048",
@@ -948,21 +830,9 @@
     "idle_balance_days": 28,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
-      "debit_card",
-      "personal_loan",
-      "recurring_deposit"
+      "debit_card"
     ],
-    "loans": [
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 560000
-      },
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 470000
-      }
-    ]
+    "idle_balance_amount": 196700
   },
   {
     "customer_id": "SBI-HYD-2024-049",
@@ -977,17 +847,11 @@
     "idle_balance_days": 87,
     "current_services_in_use": [
       "savings_account",
-      "car_loan",
       "net_banking",
       "mutual_fund",
       "health_insurance"
     ],
-    "loans": [
-      {
-        "loan_type": "car_loan",
-        "loan_amount": 700000
-      }
-    ]
+    "idle_balance_amount": 35400
   },
   {
     "customer_id": "SBI-HYD-2024-050",
@@ -1003,16 +867,10 @@
     "current_services_in_use": [
       "savings_account",
       "mutual_fund",
-      "education_loan",
       "health_insurance",
       "current_account"
     ],
-    "loans": [
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 1260000
-      }
-    ]
+    "idle_balance_amount": 31700
   },
   {
     "customer_id": "SBI-HYD-2024-051",
@@ -1026,12 +884,38 @@
     "notification_response_rate": 0.15,
     "idle_balance_days": 111,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
-      "recurring_deposit",
       "mobile_banking",
       "health_insurance",
-      "life_insurance"
-    ]
+      "home_loan",
+      "life_insurance",
+      "gold_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 140000,
+        "outstanding_amount": 94000,
+        "emi": 24000,
+        "tenure_months": 6
+      },
+      {
+        "loan_type": "home_loan",
+        "sanctioned_amount": 7460000,
+        "outstanding_amount": 6085000,
+        "emi": 69300,
+        "tenure_months": 204
+      },
+      {
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 60000,
+        "outstanding_amount": 25000,
+        "emi": 3700,
+        "tenure_months": 18
+      }
+    ],
+    "idle_balance_amount": 17700
   },
   {
     "customer_id": "SBI-HYD-2024-052",
@@ -1046,21 +930,20 @@
     "idle_balance_days": 23,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
-      "home_loan",
       "current_account",
+      "business_loan",
       "net_banking"
     ],
     "loans": [
       {
-        "loan_type": "education_loan",
-        "loan_amount": 1950000
-      },
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 4760000
+        "loan_type": "business_loan",
+        "sanctioned_amount": 4000000,
+        "outstanding_amount": 3650000,
+        "emi": 154100,
+        "tenure_months": 30
       }
-    ]
+    ],
+    "idle_balance_amount": 73000
   },
   {
     "customer_id": "SBI-HYD-2024-053",
@@ -1074,22 +957,37 @@
     "notification_response_rate": 0.61,
     "idle_balance_days": 56,
     "current_services_in_use": [
-      "savings_account",
-      "current_account",
       "personal_loan",
-      "home_loan",
-      "life_insurance"
+      "savings_account",
+      "life_insurance",
+      "current_account",
+      "mortgage_loan",
+      "gold_loan"
     ],
     "loans": [
       {
-        "loan_type": "personal_loan",
-        "loan_amount": 150000
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 260000,
+        "outstanding_amount": 218000,
+        "emi": 44600,
+        "tenure_months": 6
       },
       {
-        "loan_type": "home_loan",
-        "loan_amount": 4280000
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 120000,
+        "outstanding_amount": 36000,
+        "emi": 3500,
+        "tenure_months": 42
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 4080000,
+        "outstanding_amount": 2568000,
+        "emi": 51300,
+        "tenure_months": 126
       }
-    ]
+    ],
+    "idle_balance_amount": 18400
   },
   {
     "customer_id": "SBI-HYD-2024-054",
@@ -1104,15 +1002,34 @@
     "idle_balance_days": 18,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit",
-      "car_loan"
+      "home_loan",
+      "business_loan",
+      "mortgage_loan"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 970000
+        "loan_type": "business_loan",
+        "sanctioned_amount": 900000,
+        "outstanding_amount": 498000,
+        "emi": 16400,
+        "tenure_months": 78
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 3760000,
+        "outstanding_amount": 2274000,
+        "emi": 43900,
+        "tenure_months": 144
+      },
+      {
+        "loan_type": "home_loan",
+        "sanctioned_amount": 3740000,
+        "outstanding_amount": 3164000,
+        "emi": 33100,
+        "tenure_months": 228
       }
-    ]
+    ],
+    "idle_balance_amount": 41600
   },
   {
     "customer_id": "SBI-HYD-2024-055",
@@ -1127,10 +1044,21 @@
     "idle_balance_days": 36,
     "current_services_in_use": [
       "savings_account",
+      "mobile_banking",
+      "business_loan",
       "net_banking",
-      "credit_card",
-      "mobile_banking"
-    ]
+      "credit_card"
+    ],
+    "loans": [
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 2430000,
+        "outstanding_amount": 543000,
+        "emi": 93600,
+        "tenure_months": 30
+      }
+    ],
+    "idle_balance_amount": 55000
   },
   {
     "customer_id": "SBI-HYD-2024-056",
@@ -1145,17 +1073,21 @@
     "idle_balance_days": 73,
     "current_services_in_use": [
       "savings_account",
-      "mutual_fund",
-      "education_loan",
+      "life_insurance",
       "current_account",
-      "life_insurance"
+      "business_loan",
+      "mutual_fund"
     ],
     "loans": [
       {
-        "loan_type": "education_loan",
-        "loan_amount": 450000
+        "loan_type": "business_loan",
+        "sanctioned_amount": 560000,
+        "outstanding_amount": 388000,
+        "emi": 11500,
+        "tenure_months": 66
       }
-    ]
+    ],
+    "idle_balance_amount": 3700
   },
   {
     "customer_id": "SBI-HYD-2024-057",
@@ -1170,21 +1102,20 @@
     "idle_balance_days": 95,
     "current_services_in_use": [
       "savings_account",
-      "current_account",
+      "two_wheeler_loan",
       "life_insurance",
-      "personal_loan",
-      "home_loan"
+      "current_account"
     ],
     "loans": [
       {
-        "loan_type": "personal_loan",
-        "loan_amount": 100000
-      },
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 6120000
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 40000,
+        "outstanding_amount": 26000,
+        "emi": 1100,
+        "tenure_months": 42
       }
-    ]
+    ],
+    "idle_balance_amount": 75900
   },
   {
     "customer_id": "SBI-HYD-2024-058",
@@ -1199,10 +1130,21 @@
     "idle_balance_days": 36,
     "current_services_in_use": [
       "savings_account",
+      "life_insurance",
       "current_account",
-      "net_banking",
-      "life_insurance"
-    ]
+      "education_loan",
+      "net_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1590000,
+        "outstanding_amount": 1505000,
+        "emi": 33000,
+        "tenure_months": 60
+      }
+    ],
+    "idle_balance_amount": 118700
   },
   {
     "customer_id": "SBI-HYD-2024-059",
@@ -1217,21 +1159,20 @@
     "idle_balance_days": 5,
     "current_services_in_use": [
       "savings_account",
-      "credit_card",
       "health_insurance",
-      "car_loan",
-      "home_loan"
+      "two_wheeler_loan",
+      "credit_card"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 850000
-      },
-      {
-        "loan_type": "home_loan",
-        "loan_amount": 5980000
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 110000,
+        "outstanding_amount": 33000,
+        "emi": 3100,
+        "tenure_months": 42
       }
-    ]
+    ],
+    "idle_balance_amount": 78500
   },
   {
     "customer_id": "SBI-HYD-2024-060",
@@ -1246,21 +1187,36 @@
     "idle_balance_days": 17,
     "current_services_in_use": [
       "savings_account",
-      "home_loan",
       "mobile_banking",
       "car_loan",
+      "education_loan",
+      "mortgage_loan",
       "debit_card"
     ],
     "loans": [
       {
-        "loan_type": "home_loan",
-        "loan_amount": 5440000
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1350000,
+        "outstanding_amount": 938000,
+        "emi": 18300,
+        "tenure_months": 108
       },
       {
         "loan_type": "car_loan",
-        "loan_amount": 730000
+        "sanctioned_amount": 1360000,
+        "outstanding_amount": 223000,
+        "emi": 38200,
+        "tenure_months": 42
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 1070000,
+        "outstanding_amount": 358000,
+        "emi": 13500,
+        "tenure_months": 126
       }
-    ]
+    ],
+    "idle_balance_amount": 28100
   },
   {
     "customer_id": "SBI-HYD-2024-061",
@@ -1275,16 +1231,36 @@
     "idle_balance_days": 70,
     "current_services_in_use": [
       "savings_account",
-      "life_insurance",
+      "health_insurance",
       "home_loan",
-      "health_insurance"
+      "life_insurance",
+      "education_loan",
+      "business_loan"
     ],
     "loans": [
       {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 860000,
+        "outstanding_amount": 527000,
+        "emi": 13800,
+        "tenure_months": 84
+      },
+      {
         "loan_type": "home_loan",
-        "loan_amount": 3390000
+        "sanctioned_amount": 1500000,
+        "outstanding_amount": 1161000,
+        "emi": 14300,
+        "tenure_months": 192
+      },
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 1250000,
+        "outstanding_amount": 67000,
+        "emi": 22800,
+        "tenure_months": 78
       }
-    ]
+    ],
+    "idle_balance_amount": 160600
   },
   {
     "customer_id": "SBI-HYD-2024-062",
@@ -1299,21 +1275,20 @@
     "idle_balance_days": 16,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
-      "personal_loan",
       "net_banking",
+      "gold_loan",
       "mutual_fund"
     ],
     "loans": [
       {
-        "loan_type": "education_loan",
-        "loan_amount": 600000
-      },
-      {
-        "loan_type": "personal_loan",
-        "loan_amount": 90000
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 490000,
+        "outstanding_amount": 361000,
+        "emi": 29400,
+        "tenure_months": 18
       }
-    ]
+    ],
+    "idle_balance_amount": 43300
   },
   {
     "customer_id": "SBI-HYD-2024-063",
@@ -1328,14 +1303,18 @@
     "idle_balance_days": 21,
     "current_services_in_use": [
       "savings_account",
-      "education_loan"
+      "mortgage_loan"
     ],
     "loans": [
       {
-        "loan_type": "education_loan",
-        "loan_amount": 370000
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 3180000,
+        "outstanding_amount": 1544000,
+        "emi": 52000,
+        "tenure_months": 84
       }
-    ]
+    ],
+    "idle_balance_amount": 73900
   },
   {
     "customer_id": "SBI-HYD-2024-064",
@@ -1350,21 +1329,27 @@
     "idle_balance_days": 40,
     "current_services_in_use": [
       "savings_account",
-      "car_loan",
-      "fixed_deposit",
-      "home_loan",
+      "education_loan",
+      "mortgage_loan",
       "mutual_fund"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 720000
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1520000,
+        "outstanding_amount": 561000,
+        "emi": 22300,
+        "tenure_months": 96
       },
       {
-        "loan_type": "home_loan",
-        "loan_amount": 7350000
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 4390000,
+        "outstanding_amount": 3351000,
+        "emi": 60600,
+        "tenure_months": 108
       }
-    ]
+    ],
+    "idle_balance_amount": 46000
   },
   {
     "customer_id": "SBI-HYD-2024-065",
@@ -1379,16 +1364,36 @@
     "idle_balance_days": 97,
     "current_services_in_use": [
       "savings_account",
-      "mutual_fund",
       "health_insurance",
-      "home_loan"
+      "home_loan",
+      "car_loan",
+      "mutual_fund",
+      "two_wheeler_loan"
     ],
     "loans": [
       {
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 80000,
+        "outstanding_amount": 21000,
+        "emi": 7100,
+        "tenure_months": 12
+      },
+      {
         "loan_type": "home_loan",
-        "loan_amount": 6200000
+        "sanctioned_amount": 6940000,
+        "outstanding_amount": 5235000,
+        "emi": 69500,
+        "tenure_months": 174
+      },
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 500000,
+        "outstanding_amount": 275000,
+        "emi": 9800,
+        "tenure_months": 66
       }
-    ]
+    ],
+    "idle_balance_amount": 153600
   },
   {
     "customer_id": "SBI-HYD-2024-066",
@@ -1402,22 +1407,29 @@
     "notification_response_rate": 0.19,
     "idle_balance_days": 71,
     "current_services_in_use": [
-      "savings_account",
-      "home_loan",
-      "current_account",
       "personal_loan",
+      "savings_account",
+      "current_account",
+      "business_loan",
       "net_banking"
     ],
     "loans": [
       {
-        "loan_type": "home_loan",
-        "loan_amount": 5170000
+        "loan_type": "business_loan",
+        "sanctioned_amount": 2140000,
+        "outstanding_amount": 1236000,
+        "emi": 55800,
+        "tenure_months": 48
       },
       {
         "loan_type": "personal_loan",
-        "loan_amount": 360000
+        "sanctioned_amount": 320000,
+        "outstanding_amount": 57000,
+        "emi": 19500,
+        "tenure_months": 18
       }
-    ]
+    ],
+    "idle_balance_amount": 167100
   },
   {
     "customer_id": "SBI-HYD-2024-067",
@@ -1432,17 +1444,21 @@
     "idle_balance_days": 119,
     "current_services_in_use": [
       "savings_account",
-      "credit_card",
-      "mutual_fund",
+      "mobile_banking",
       "education_loan",
-      "mobile_banking"
+      "mutual_fund",
+      "credit_card"
     ],
     "loans": [
       {
         "loan_type": "education_loan",
-        "loan_amount": 1680000
+        "sanctioned_amount": 1060000,
+        "outstanding_amount": 644000,
+        "emi": 19100,
+        "tenure_months": 72
       }
-    ]
+    ],
+    "idle_balance_amount": 203200
   },
   {
     "customer_id": "SBI-HYD-2024-068",
@@ -1457,8 +1473,35 @@
     "idle_balance_days": 33,
     "current_services_in_use": [
       "savings_account",
+      "car_loan",
+      "mortgage_loan",
+      "gold_loan",
       "mutual_fund"
-    ]
+    ],
+    "loans": [
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 270000,
+        "outstanding_amount": 142000,
+        "emi": 12500,
+        "tenure_months": 24
+      },
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 1190000,
+        "outstanding_amount": 646000,
+        "emi": 21700,
+        "tenure_months": 72
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 2580000,
+        "outstanding_amount": 1796000,
+        "emi": 27400,
+        "tenure_months": 174
+      }
+    ],
+    "idle_balance_amount": 25800
   },
   {
     "customer_id": "SBI-HYD-2024-069",
@@ -1473,19 +1516,18 @@
     "idle_balance_days": 69,
     "current_services_in_use": [
       "savings_account",
-      "car_loan",
-      "education_loan"
+      "mortgage_loan"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 1430000
-      },
-      {
-        "loan_type": "education_loan",
-        "loan_amount": 360000
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 4540000,
+        "outstanding_amount": 2733000,
+        "emi": 60600,
+        "tenure_months": 114
       }
-    ]
+    ],
+    "idle_balance_amount": 112900
   },
   {
     "customer_id": "SBI-HYD-2024-070",
@@ -1499,18 +1541,36 @@
     "notification_response_rate": 0.27,
     "idle_balance_days": 89,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
-      "fixed_deposit",
       "mobile_banking",
-      "education_loan",
-      "recurring_deposit"
+      "home_loan",
+      "gold_loan"
     ],
     "loans": [
       {
-        "loan_type": "education_loan",
-        "loan_amount": 410000
+        "loan_type": "home_loan",
+        "sanctioned_amount": 2530000,
+        "outstanding_amount": 2126000,
+        "emi": 24500,
+        "tenure_months": 186
+      },
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 100000,
+        "outstanding_amount": 84000,
+        "emi": 17200,
+        "tenure_months": 6
+      },
+      {
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 180000,
+        "outstanding_amount": 40000,
+        "emi": 7000,
+        "tenure_months": 30
       }
-    ]
+    ],
+    "idle_balance_amount": 20900
   },
   {
     "customer_id": "SBI-HYD-2024-071",
@@ -1525,15 +1585,27 @@
     "idle_balance_days": 61,
     "current_services_in_use": [
       "savings_account",
-      "personal_loan",
-      "life_insurance"
+      "car_loan",
+      "life_insurance",
+      "gold_loan"
     ],
     "loans": [
       {
-        "loan_type": "personal_loan",
-        "loan_amount": 490000
+        "loan_type": "car_loan",
+        "sanctioned_amount": 1390000,
+        "outstanding_amount": 463000,
+        "emi": 29200,
+        "tenure_months": 60
+      },
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 420000,
+        "outstanding_amount": 180000,
+        "emi": 36900,
+        "tenure_months": 12
       }
-    ]
+    ],
+    "idle_balance_amount": 108500
   },
   {
     "customer_id": "SBI-HYD-2024-072",
@@ -1548,9 +1620,20 @@
     "idle_balance_days": 20,
     "current_services_in_use": [
       "savings_account",
+      "education_loan",
       "net_banking",
       "debit_card"
-    ]
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 900000,
+        "outstanding_amount": 219000,
+        "emi": 13800,
+        "tenure_months": 90
+      }
+    ],
+    "idle_balance_amount": 95100
   },
   {
     "customer_id": "SBI-HYD-2024-073",
@@ -1566,9 +1649,19 @@
     "current_services_in_use": [
       "savings_account",
       "health_insurance",
-      "fixed_deposit",
-      "current_account"
-    ]
+      "current_account",
+      "business_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 1930000,
+        "outstanding_amount": 731000,
+        "emi": 56000,
+        "tenure_months": 42
+      }
+    ],
+    "idle_balance_amount": 12300
   },
   {
     "customer_id": "SBI-HYD-2024-074",
@@ -1584,8 +1677,18 @@
     "current_services_in_use": [
       "savings_account",
       "net_banking",
-      "fixed_deposit"
-    ]
+      "business_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 2020000,
+        "outstanding_amount": 938000,
+        "emi": 35100,
+        "tenure_months": 84
+      }
+    ],
+    "idle_balance_amount": 300700
   },
   {
     "customer_id": "SBI-HYD-2024-075",
@@ -1600,11 +1703,29 @@
     "idle_balance_days": 32,
     "current_services_in_use": [
       "savings_account",
+      "car_loan",
       "life_insurance",
-      "net_banking",
-      "recurring_deposit",
-      "current_account"
-    ]
+      "current_account",
+      "business_loan",
+      "net_banking"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 1360000,
+        "outstanding_amount": 638000,
+        "emi": 38200,
+        "tenure_months": 42
+      },
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 3270000,
+        "outstanding_amount": 1683000,
+        "emi": 59700,
+        "tenure_months": 78
+      }
+    ],
+    "idle_balance_amount": 143000
   },
   {
     "customer_id": "SBI-HYD-2024-076",
@@ -1619,17 +1740,20 @@
     "idle_balance_days": 96,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
-      "credit_card",
       "health_insurance",
-      "fixed_deposit"
+      "car_loan",
+      "credit_card"
     ],
     "loans": [
       {
-        "loan_type": "education_loan",
-        "loan_amount": 1880000
+        "loan_type": "car_loan",
+        "sanctioned_amount": 910000,
+        "outstanding_amount": 121000,
+        "emi": 15700,
+        "tenure_months": 78
       }
-    ]
+    ],
+    "idle_balance_amount": 16400
   },
   {
     "customer_id": "SBI-HYD-2024-077",
@@ -1644,14 +1768,26 @@
     "idle_balance_days": 86,
     "current_services_in_use": [
       "savings_account",
-      "car_loan"
+      "business_loan",
+      "education_loan"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 740000
+        "loan_type": "education_loan",
+        "sanctioned_amount": 880000,
+        "outstanding_amount": 55000,
+        "emi": 11100,
+        "tenure_months": 120
+      },
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 3060000,
+        "outstanding_amount": 1745000,
+        "emi": 100900,
+        "tenure_months": 36
       }
-    ]
+    ],
+    "idle_balance_amount": 28300
   },
   {
     "customer_id": "SBI-HYD-2024-078",
@@ -1672,9 +1808,13 @@
     "loans": [
       {
         "loan_type": "education_loan",
-        "loan_amount": 1760000
+        "sanctioned_amount": 520000,
+        "outstanding_amount": 317000,
+        "emi": 8800,
+        "tenure_months": 78
       }
-    ]
+    ],
+    "idle_balance_amount": 64900
   },
   {
     "customer_id": "SBI-HYD-2024-079",
@@ -1689,9 +1829,19 @@
     "idle_balance_days": 103,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit",
-      "health_insurance"
-    ]
+      "health_insurance",
+      "two_wheeler_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 100000,
+        "outstanding_amount": 90000,
+        "emi": 6000,
+        "tenure_months": 18
+      }
+    ],
+    "idle_balance_amount": 29500
   },
   {
     "customer_id": "SBI-HYD-2024-080",
@@ -1706,8 +1856,26 @@
     "idle_balance_days": 86,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit"
-    ]
+      "education_loan",
+      "two_wheeler_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1820000,
+        "outstanding_amount": 811000,
+        "emi": 23100,
+        "tenure_months": 120
+      },
+      {
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 130000,
+        "outstanding_amount": 122000,
+        "emi": 3700,
+        "tenure_months": 42
+      }
+    ],
+    "idle_balance_amount": 92100
   },
   {
     "customer_id": "SBI-HYD-2024-081",
@@ -1722,11 +1890,29 @@
     "idle_balance_days": 117,
     "current_services_in_use": [
       "savings_account",
-      "fixed_deposit",
+      "mobile_banking",
       "health_insurance",
+      "mortgage_loan",
       "mutual_fund",
-      "mobile_banking"
-    ]
+      "two_wheeler_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 2950000,
+        "outstanding_amount": 467000,
+        "emi": 53900,
+        "tenure_months": 72
+      },
+      {
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 130000,
+        "outstanding_amount": 88000,
+        "emi": 11500,
+        "tenure_months": 12
+      }
+    ],
+    "idle_balance_amount": 892700
   },
   {
     "customer_id": "SBI-HYD-2024-082",
@@ -1740,10 +1926,28 @@
     "notification_response_rate": 0.58,
     "idle_balance_days": 119,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
-      "current_account",
-      "recurring_deposit"
-    ]
+      "car_loan",
+      "current_account"
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 470000,
+        "outstanding_amount": 390000,
+        "emi": 10700,
+        "tenure_months": 54
+      },
+      {
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 60000,
+        "outstanding_amount": 36000,
+        "emi": 5300,
+        "tenure_months": 12
+      }
+    ],
+    "idle_balance_amount": 553000
   },
   {
     "customer_id": "SBI-HYD-2024-083",
@@ -1759,8 +1963,35 @@
     "current_services_in_use": [
       "savings_account",
       "mobile_banking",
-      "life_insurance"
-    ]
+      "home_loan",
+      "car_loan",
+      "life_insurance",
+      "education_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 390000,
+        "outstanding_amount": 137000,
+        "emi": 5300,
+        "tenure_months": 108
+      },
+      {
+        "loan_type": "home_loan",
+        "sanctioned_amount": 6550000,
+        "outstanding_amount": 3867000,
+        "emi": 71000,
+        "tenure_months": 150
+      },
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 1260000,
+        "outstanding_amount": 515000,
+        "emi": 24600,
+        "tenure_months": 66
+      }
+    ],
+    "idle_balance_amount": 45300
   },
   {
     "customer_id": "SBI-HYD-2024-084",
@@ -1775,14 +2006,26 @@
     "idle_balance_days": 86,
     "current_services_in_use": [
       "savings_account",
+      "car_loan",
       "education_loan"
     ],
     "loans": [
       {
         "loan_type": "education_loan",
-        "loan_amount": 890000
+        "sanctioned_amount": 1860000,
+        "outstanding_amount": 1605000,
+        "emi": 27200,
+        "tenure_months": 96
+      },
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 1300000,
+        "outstanding_amount": 630000,
+        "emi": 32700,
+        "tenure_months": 48
       }
-    ]
+    ],
+    "idle_balance_amount": 360100
   },
   {
     "customer_id": "SBI-HYD-2024-085",
@@ -1796,9 +2039,36 @@
     "notification_response_rate": 0.03,
     "idle_balance_days": 97,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
-      "life_insurance"
-    ]
+      "life_insurance",
+      "mortgage_loan",
+      "gold_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 410000,
+        "outstanding_amount": 299000,
+        "emi": 18900,
+        "tenure_months": 24
+      },
+      {
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 490000,
+        "outstanding_amount": 358000,
+        "emi": 19000,
+        "tenure_months": 30
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 2820000,
+        "outstanding_amount": 1255000,
+        "emi": 48600,
+        "tenure_months": 78
+      }
+    ],
+    "idle_balance_amount": 46700
   },
   {
     "customer_id": "SBI-HYD-2024-086",
@@ -1813,8 +2083,19 @@
     "idle_balance_days": 2,
     "current_services_in_use": [
       "savings_account",
+      "mortgage_loan",
       "credit_card"
-    ]
+    ],
+    "loans": [
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 2840000,
+        "outstanding_amount": 2645000,
+        "emi": 35700,
+        "tenure_months": 126
+      }
+    ],
+    "idle_balance_amount": 57100
   },
   {
     "customer_id": "SBI-HYD-2024-087",
@@ -1829,16 +2110,20 @@
     "idle_balance_days": 45,
     "current_services_in_use": [
       "savings_account",
+      "mobile_banking",
       "net_banking",
-      "car_loan",
-      "mobile_banking"
+      "two_wheeler_loan"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 480000
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 40000,
+        "outstanding_amount": 18000,
+        "emi": 1100,
+        "tenure_months": 42
       }
-    ]
+    ],
+    "idle_balance_amount": 130600
   },
   {
     "customer_id": "SBI-HYD-2024-088",
@@ -1854,18 +2139,25 @@
     "current_services_in_use": [
       "savings_account",
       "personal_loan",
-      "car_loan"
+      "business_loan"
     ],
     "loans": [
       {
         "loan_type": "personal_loan",
-        "loan_amount": 100000
+        "sanctioned_amount": 260000,
+        "outstanding_amount": 127000,
+        "emi": 12200,
+        "tenure_months": 24
       },
       {
-        "loan_type": "car_loan",
-        "loan_amount": 1270000
+        "loan_type": "business_loan",
+        "sanctioned_amount": 2430000,
+        "outstanding_amount": 1403000,
+        "emi": 63400,
+        "tenure_months": 48
       }
-    ]
+    ],
+    "idle_balance_amount": 88700
   },
   {
     "customer_id": "SBI-HYD-2024-089",
@@ -1880,15 +2172,35 @@
     "idle_balance_days": 87,
     "current_services_in_use": [
       "savings_account",
-      "mutual_fund",
-      "education_loan"
+      "car_loan",
+      "education_loan",
+      "business_loan",
+      "mutual_fund"
     ],
     "loans": [
       {
         "loan_type": "education_loan",
-        "loan_amount": 1940000
+        "sanctioned_amount": 540000,
+        "outstanding_amount": 193000,
+        "emi": 9200,
+        "tenure_months": 78
+      },
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 3230000,
+        "outstanding_amount": 1996000,
+        "emi": 84300,
+        "tenure_months": 48
+      },
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 520000,
+        "outstanding_amount": 184000,
+        "emi": 13100,
+        "tenure_months": 48
       }
-    ]
+    ],
+    "idle_balance_amount": 344300
   },
   {
     "customer_id": "SBI-HYD-2024-090",
@@ -1903,8 +2215,19 @@
     "idle_balance_days": 0,
     "current_services_in_use": [
       "savings_account",
+      "car_loan",
       "credit_card"
-    ]
+    ],
+    "loans": [
+      {
+        "loan_type": "car_loan",
+        "sanctioned_amount": 1030000,
+        "outstanding_amount": 1020000,
+        "emi": 17700,
+        "tenure_months": 78
+      }
+    ],
+    "idle_balance_amount": 3700
   },
   {
     "customer_id": "SBI-HYD-2024-091",
@@ -1918,18 +2241,37 @@
     "notification_response_rate": 0.18,
     "idle_balance_days": 69,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
-      "home_loan",
+      "gold_loan",
       "debit_card",
       "mutual_fund",
-      "fixed_deposit"
+      "two_wheeler_loan"
     ],
     "loans": [
       {
-        "loan_type": "home_loan",
-        "loan_amount": 2170000
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 220000,
+        "outstanding_amount": 148000,
+        "emi": 37700,
+        "tenure_months": 6
+      },
+      {
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 360000,
+        "outstanding_amount": 125000,
+        "emi": 32000,
+        "tenure_months": 12
+      },
+      {
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 50000,
+        "outstanding_amount": 22000,
+        "emi": 1900,
+        "tenure_months": 30
       }
-    ]
+    ],
+    "idle_balance_amount": 44000
   },
   {
     "customer_id": "SBI-HYD-2024-092",
@@ -1943,9 +2285,36 @@
     "notification_response_rate": 0.66,
     "idle_balance_days": 84,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
+      "education_loan",
+      "mortgage_loan",
       "debit_card"
-    ]
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1700000,
+        "outstanding_amount": 941000,
+        "emi": 23000,
+        "tenure_months": 108
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 4010000,
+        "outstanding_amount": 1972000,
+        "emi": 84200,
+        "tenure_months": 60
+      },
+      {
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 110000,
+        "outstanding_amount": 73000,
+        "emi": 4300,
+        "tenure_months": 30
+      }
+    ],
+    "idle_balance_amount": 294700
   },
   {
     "customer_id": "SBI-HYD-2024-093",
@@ -1960,14 +2329,34 @@
     "idle_balance_days": 37,
     "current_services_in_use": [
       "savings_account",
-      "car_loan"
+      "business_loan",
+      "mortgage_loan",
+      "two_wheeler_loan"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 1430000
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 100000,
+        "outstanding_amount": 34000,
+        "emi": 2600,
+        "tenure_months": 48
+      },
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 1400000,
+        "outstanding_amount": 939000,
+        "emi": 33300,
+        "tenure_months": 54
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 2340000,
+        "outstanding_amount": 603000,
+        "emi": 45700,
+        "tenure_months": 66
       }
-    ]
+    ],
+    "idle_balance_amount": 16300
   },
   {
     "customer_id": "SBI-HYD-2024-094",
@@ -1982,8 +2371,35 @@
     "idle_balance_days": 82,
     "current_services_in_use": [
       "savings_account",
-      "current_account"
-    ]
+      "home_loan",
+      "current_account",
+      "business_loan",
+      "two_wheeler_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "home_loan",
+        "sanctioned_amount": 3200000,
+        "outstanding_amount": 2123000,
+        "emi": 35500,
+        "tenure_months": 144
+      },
+      {
+        "loan_type": "business_loan",
+        "sanctioned_amount": 2100000,
+        "outstanding_amount": 486000,
+        "emi": 43100,
+        "tenure_months": 66
+      },
+      {
+        "loan_type": "two_wheeler_loan",
+        "sanctioned_amount": 80000,
+        "outstanding_amount": 8000,
+        "emi": 2000,
+        "tenure_months": 48
+      }
+    ],
+    "idle_balance_amount": 15500
   },
   {
     "customer_id": "SBI-HYD-2024-095",
@@ -1998,21 +2414,28 @@
     "idle_balance_days": 78,
     "current_services_in_use": [
       "savings_account",
-      "education_loan",
       "life_insurance",
-      "home_loan",
+      "education_loan",
+      "business_loan",
       "mutual_fund"
     ],
     "loans": [
       {
         "loan_type": "education_loan",
-        "loan_amount": 420000
+        "sanctioned_amount": 1400000,
+        "outstanding_amount": 1022000,
+        "emi": 19700,
+        "tenure_months": 102
       },
       {
-        "loan_type": "home_loan",
-        "loan_amount": 3780000
+        "loan_type": "business_loan",
+        "sanctioned_amount": 4790000,
+        "outstanding_amount": 3483000,
+        "emi": 92400,
+        "tenure_months": 72
       }
-    ]
+    ],
+    "idle_balance_amount": 22400
   },
   {
     "customer_id": "SBI-HYD-2024-096",
@@ -2027,17 +2450,37 @@
     "idle_balance_days": 23,
     "current_services_in_use": [
       "savings_account",
-      "mutual_fund",
-      "credit_card",
       "mobile_banking",
-      "personal_loan"
+      "home_loan",
+      "education_loan",
+      "gold_loan",
+      "mutual_fund",
+      "credit_card"
     ],
     "loans": [
       {
-        "loan_type": "personal_loan",
-        "loan_amount": 280000
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 190000,
+        "outstanding_amount": 129000,
+        "emi": 16700,
+        "tenure_months": 12
+      },
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 480000,
+        "outstanding_amount": 334000,
+        "emi": 6100,
+        "tenure_months": 120
+      },
+      {
+        "loan_type": "home_loan",
+        "sanctioned_amount": 3960000,
+        "outstanding_amount": 3351000,
+        "emi": 45100,
+        "tenure_months": 138
       }
-    ]
+    ],
+    "idle_balance_amount": 108600
   },
   {
     "customer_id": "SBI-HYD-2024-097",
@@ -2052,9 +2495,27 @@
     "idle_balance_days": 28,
     "current_services_in_use": [
       "savings_account",
-      "recurring_deposit",
-      "current_account"
-    ]
+      "current_account",
+      "education_loan",
+      "gold_loan"
+    ],
+    "loans": [
+      {
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1990000,
+        "outstanding_amount": 571000,
+        "emi": 35900,
+        "tenure_months": 72
+      },
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 100000,
+        "outstanding_amount": 92000,
+        "emi": 8800,
+        "tenure_months": 12
+      }
+    ],
+    "idle_balance_amount": 55400
   },
   {
     "customer_id": "SBI-HYD-2024-098",
@@ -2069,14 +2530,18 @@
     "idle_balance_days": 44,
     "current_services_in_use": [
       "savings_account",
-      "car_loan"
+      "education_loan"
     ],
     "loans": [
       {
-        "loan_type": "car_loan",
-        "loan_amount": 1460000
+        "loan_type": "education_loan",
+        "sanctioned_amount": 1590000,
+        "outstanding_amount": 1294000,
+        "emi": 24400,
+        "tenure_months": 90
       }
-    ]
+    ],
+    "idle_balance_amount": 69900
   },
   {
     "customer_id": "SBI-HYD-2024-099",
@@ -2090,16 +2555,36 @@
     "notification_response_rate": 0.57,
     "idle_balance_days": 37,
     "current_services_in_use": [
+      "personal_loan",
       "savings_account",
-      "home_loan",
-      "health_insurance"
+      "health_insurance",
+      "mortgage_loan",
+      "gold_loan"
     ],
     "loans": [
       {
-        "loan_type": "home_loan",
-        "loan_amount": 2520000
+        "loan_type": "personal_loan",
+        "sanctioned_amount": 210000,
+        "outstanding_amount": 99000,
+        "emi": 8100,
+        "tenure_months": 30
+      },
+      {
+        "loan_type": "mortgage_loan",
+        "sanctioned_amount": 4880000,
+        "outstanding_amount": 1479000,
+        "emi": 63100,
+        "tenure_months": 120
+      },
+      {
+        "loan_type": "gold_loan",
+        "sanctioned_amount": 340000,
+        "outstanding_amount": 106000,
+        "emi": 15700,
+        "tenure_months": 24
       }
-    ]
+    ],
+    "idle_balance_amount": 91900
   },
   {
     "customer_id": "SBI-HYD-2024-100",
@@ -2114,16 +2599,20 @@
     "idle_balance_days": 101,
     "current_services_in_use": [
       "savings_account",
-      "life_insurance",
       "mobile_banking",
       "health_insurance",
-      "home_loan"
+      "life_insurance",
+      "education_loan"
     ],
     "loans": [
       {
-        "loan_type": "home_loan",
-        "loan_amount": 4450000
+        "loan_type": "education_loan",
+        "sanctioned_amount": 630000,
+        "outstanding_amount": 179000,
+        "emi": 10100,
+        "tenure_months": 84
       }
-    ]
+    ],
+    "idle_balance_amount": 182500
   }
 ]
