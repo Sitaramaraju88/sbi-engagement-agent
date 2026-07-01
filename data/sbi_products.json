@@ -1,0 +1,39 @@
+{
+  "fixed_deposits": [
+    {
+      "scheme_name": "SBI Regular Fixed Deposit",
+      "tenure": "1 year to less than 2 years",
+      "interest_rate_general": "6.80%",
+      "interest_rate_senior": "7.30%"
+    },
+    {
+      "scheme_name": "SBI Amrit Vrishti Scheme",
+      "tenure": "444 Days",
+      "interest_rate_general": "7.25%",
+      "interest_rate_senior": "7.75%",
+      "notes": "Special high-yield scheme."
+    }
+  ],
+  "debt_strategies": {
+    "avalanche": {
+      "strategy_name": "Debt Avalanche Optimization",
+      "action_plan": "Keep paying standard EMIs but aggressively redirect your investable surplus into the loan with the highest interest rate first.",
+      "benefit": "Mathematically saves the maximum amount of money on interest out-of-pocket."
+    },
+    "snowball": {
+      "strategy_name": "Debt Snowball Motivation Track",
+      "action_plan": "Target and clear the loan with the smallest outstanding principal balance first by adding extra surplus cash to it.",
+      "benefit": "Eliminates lines of credit rapidly, providing psychological wins and reducing the number of active EMIs."
+    },
+    "prepayment": {
+      "strategy_name": "Idle Balance Principal Prepayment",
+      "action_plan": "Deploy a portion of your idle savings account balance directly into your long-term loan principal (e.g., Home/Car Loan).",
+      "benefit": "Drastically reduces your remaining loan tenure and shrinks your lifetime interest burden."
+    },
+    "consolidation": {
+      "strategy_name": "SBI Personal Loan for Debt Consolidation",
+      "action_plan": "In severe cases, close multiple high-interest external loans by migrating them into a single structured SBI personal loan at 11.15%.",
+      "benefit": "Lowers overall monthly EMI outflow when the current debt ratio is critical."
+    }
+  }
+}

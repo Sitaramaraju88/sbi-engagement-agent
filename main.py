@@ -12,9 +12,9 @@ from agents.loan_optimizer_agent import run_loan_optimizer_agent
 
 load_dotenv()
 
-def run_pipeline(verbose: bool = True, customer_id: str = None) -> dict:
+def run_pipeline(verbose: bool = True, customer_id: str = None, target_lang: str = "English") -> dict:
     print("\n" + "="*60)
-    print("   SBI AGENTIC AI - DIGITAL ENGAGEMENT SYSTEM")
+    print(f"   SBI AGENTIC AI - DIGITAL ENGAGEMENT SYSTEM ({target_lang.upper()})")
     print("="*60)
 
     # Step 1 - Behavioral Agent
@@ -38,14 +38,17 @@ def run_pipeline(verbose: bool = True, customer_id: str = None) -> dict:
         else:
             print(f"✅ {loan_output['message']}")
 
-    # Step 3 - Advisor Agent
+    # Step 3 - Advisor Agent (Now passing the language parameter)
     print("\n[3/4] Running Proactive Advisor Agent...")
-    advisor_output = run_advisor_agent(behavioral_output, customer_id)
+    advisor_output = run_advisor_agent(behavioral_output, customer_id, target_lang=target_lang)
     if verbose:
         print(f"✅ Recommendations Found : {len(advisor_output['recommendations'])}")
         if advisor_output['best_recommendation']:
-            print(f"✅ Best Action           : {advisor_output['best_recommendation']['action']}")
-            print(f"✅ Amount                : ₹{advisor_output['best_recommendation']['amount']:,}")
+            # Safe print checking if best_recommendation is a dict or string strategy name
+            best_act = advisor_output['best_recommendation']
+            strategy_display = best_act if isinstance(best_act, str) else best_act.get('action', 'Strategy Identified')
+            print(f"✅ Best Action Target    : {strategy_display}")
+            print(f"✅ Delivery Language     : {advisor_output['target_language']}")
         print(f"\n💬 Personalized Message:\n{advisor_output['personalized_message']}")
 
     # Step 4 - Action Agent
@@ -69,7 +72,8 @@ def run_pipeline(verbose: bool = True, customer_id: str = None) -> dict:
     }
 
 if __name__ == "__main__":
-    result = run_pipeline(verbose=True)
+    # Test file execution defaults to English, can change to "Hindi", "Telugu", etc.
+    result = run_pipeline(verbose=True, target_lang="English")
     with open("output.json", "w") as f:
         json.dump(result, f, indent=2)
     print("\n✅ Full output saved to output.json")

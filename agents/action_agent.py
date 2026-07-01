@@ -4,6 +4,7 @@ import os
 import json
 import sys
 from datetime import datetime
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from tools.financial_tools import load_customer_data, check_compliance, analyze_balance
 
@@ -15,22 +16,26 @@ llm = ChatGroq(
 )
 
 def run_action_agent(advisor_output: dict, customer_id: str = None):
+    # FIX 1: Fetch the actual data models so 'customer' and 'balance_info' are available
     customer = load_customer_data(customer_id)
     balance_info = analyze_balance(customer)
-    best_rec = advisor_output["best_recommendation"]
+    
+    best_rec = advisor_output.get("best_recommendation")
+    
+    # FIX 2: Standardize variable extractions safely whether incoming data is a string or dictionary
+    if isinstance(best_rec, dict):
+        action_name = best_rec.get("action", "SBI Financial Strategy")
+        action_amount = best_rec.get("amount", 0)
+        action_reason = best_rec.get("reason", "Optimized financial health recommendation.")
+        action_tier = best_rec.get("tier", "Tier 1 — Standard Execution")
+    else:
+        action_name = best_rec if best_rec else "SBI Financial Strategy"
+        action_amount = 0  # Default fallback amount
+        action_reason = f"Personalized engagement track centered around {action_name} strategy."
+        action_tier = "Tier 1 — Standard Execution"
 
-    if not best_rec:
-        return {
-            "agent": "Autonomous Action Agent",
-            "action": "No action required",
-            "amount": 0,
-            "status": "NO_ACTION",
-            "compliance": {"compliant": True, "requires_approval": False, "audit_logged": True},
-            "audit_log": [],
-            "status_update": "No action required at this time. Customer profile is stable."
-        }
-
-    compliance = check_compliance(best_rec["action"])
+    # Pass the clean string variable into your compliance checker
+    compliance = check_compliance(action_name)
     audit_log = []
 
     if compliance["requires_approval"]:
@@ -38,15 +43,15 @@ def run_action_agent(advisor_output: dict, customer_id: str = None):
         action_taken = f"Recommendation sent to {customer['name']} for approval"
     else:
         status = "EXECUTED"
-        action_taken = f"Auto-executed: {best_rec['action']}"
-        if best_rec["amount"] > 0:
-            action_taken += f" of ₹{best_rec['amount']:,}"
+        action_taken = f"Auto-executed: {action_name}"
+        if action_amount > 0:
+            action_taken += f" of ₹{action_amount:,}"
 
     audit_log.append({
         "customer_id": customer["customer_id"],
         "customer_name": customer["name"],
-        "action": best_rec["action"],
-        "amount": best_rec["amount"],
+        "action": action_name,
+        "amount": action_amount,
         "status": status,
         "compliant": compliance["compliant"],
         "requires_approval": compliance["requires_approval"],
@@ -66,10 +71,10 @@ def run_action_agent(advisor_output: dict, customer_id: str = None):
     You are SBI's Autonomous Action Agent.
 
     Customer: {customer['name']} ({customer['customer_id']})
-    Action Requested: {best_rec['action']}
-    Amount: ₹{best_rec['amount']:,}
-    Reason: {best_rec['reason']}
-    Compliance Tier: {best_rec['tier']}
+    Action Requested: {action_name}
+    Amount: ₹{action_amount:,}
+    Reason: {action_reason}
+    Compliance Tier: {action_tier}
     Action Status: {status}
     {loan_note}
 
@@ -96,8 +101,8 @@ def run_action_agent(advisor_output: dict, customer_id: str = None):
 
     return {
         "agent": "Autonomous Action Agent",
-        "action": best_rec["action"],
-        "amount": best_rec["amount"],
+        "action": action_name,
+        "amount": action_amount,
         "status": status,
         "compliance": compliance,
         "audit_log": audit_log,

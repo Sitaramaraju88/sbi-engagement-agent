@@ -1,4 +1,5 @@
 import json
+import os
 from pathlib import Path
 
 def load_all_customers():
@@ -211,3 +212,29 @@ def check_compliance(action: str) -> dict:
         return {"compliant": True, "requires_approval": True, "audit_logged": True}
     else:
         return {"compliant": False, "requires_approval": True, "audit_logged": True}
+    
+def fetch_live_sbi_rates():
+    """
+    Dynamically loads the active 2026 SBI schemes from our local storage registry.
+    Acts as our internal rate service microservice layer.
+    """
+    file_path = os.path.join("data", "sbi_products.json")
+    try:
+        with open(file_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except FileNotFoundError:
+        # Safe fallback defaults so your app never crashes during the hackathon
+        return {
+            "fixed_deposits": [
+                {
+                    "scheme_name": "SBI Amrit Vrishti Scheme", 
+                    "tenure": "444 Days", 
+                    "interest_rate_general": "7.25%", 
+                    "interest_rate_senior": "7.75%"
+                }
+            ],
+            "loan_consolidation": {
+                "product": "SBI Personal Loan for Debt Consolidation", 
+                "average_rate": "11.15%"
+            }
+        }

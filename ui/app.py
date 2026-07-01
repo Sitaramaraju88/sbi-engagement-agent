@@ -2,13 +2,15 @@ import streamlit as st
 import sys
 import os
 import time
+
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from main import run_pipeline
 from tools.financial_tools import load_all_customers, get_engagement_type
 
+# Updated caching system to accept target language parameter safely
 @st.cache_data(ttl=300)
-def run_pipeline_cached(customer_id: str = None) -> dict:
-    return run_pipeline(verbose=False, customer_id=customer_id)
+def run_pipeline_cached(customer_id: str = None, target_lang: str = "English") -> dict:
+    return run_pipeline(verbose=False, customer_id=customer_id, target_lang=target_lang)
 
 st.set_page_config(
     page_title="SBI Agentic AI",
@@ -50,6 +52,26 @@ st.markdown("""
         margin-bottom: 20px;
         box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     }
+    .whatsapp-container {
+        background-color: #e5ddd5;
+        background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .whatsapp-bubble {
+        background-color: #dcf8c6;
+        padding: 12px 16px;
+        border-radius: 8px;
+        color: #303030;
+        max-width: 85%;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 15px;
+        line-height: 1.4;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -68,32 +90,32 @@ with st.sidebar:
     st.markdown("### System Info")
     st.success("✅ Groq API Connected")
     st.success("✅ LLaMA 3.3 70B Active")
-    st.success("✅ 3 Agents Ready")
+    st.success("✅ 4 Agents Standard Matrix")
     st.divider()
     st.markdown("### Agent Pipeline")
-    st.markdown("1. 🔍 Behavioral Intelligence")
-    st.markdown("2. 💳 Loan Optimizer")
-    st.markdown("3. 💡 Proactive Advisor")
-    st.markdown("4. ⚡ Autonomous Action")
+    st.markdown("1. Behavioral Intelligence")
+    st.markdown("2. Loan Optimizer")
+    st.markdown("3. Proactive Advisor")
+    st.markdown("4. Autonomous Action")
     st.divider()
     st.markdown("### AI Capabilities")
-    st.markdown("🧠 LLM Risk Appetite Detection")
-    st.markdown("📊 Dynamic Engagement Scoring")
-    st.markdown("💡 Personalized Recommendations")
-    st.markdown("💳 Loan payback Optimization");
-    st.markdown("⚡ Autonomous Action Execution")
+    st.markdown("LLM Risk Appetite Detection")
+    st.markdown("Dynamic Engagement Scoring")
+    st.markdown("Personalized Recommendations")
+    st.markdown("Loan payback Optimization")
+    st.markdown("Autonomous Action Execution")
     st.divider()
     st.markdown("### Compliance")
-    st.markdown("✅ RBI Guidelines")
-    st.markdown("✅ Audit Trail Active")
-    st.markdown("✅ Consent Framework")
-    st.markdown("✅ 3-Tier Action Model")
+    st.markdown("RBI Guidelines")
+    st.markdown("Audit Trail Active")
+    st.markdown("Consent Framework")
+    st.markdown("3-Tier Action Model")
 
 # ─────────────────────────────────────────
 # CUSTOMER SELECTOR SECTION
 # ─────────────────────────────────────────
 st.markdown("### 🔎 Customer Selector")
-st.caption("💡 Engagement types are **dynamically calculated by the AI** from raw customer signals — nothing is pre-labeled.")
+st.caption("Engagement types are **dynamically calculated by the AI** from raw customer signals — nothing is pre-labeled.")
 
 all_customers = load_all_customers()
 for c in all_customers:
@@ -115,7 +137,7 @@ col5.metric("🔵 Cold Start", cold)
 st.divider()
 
 st.markdown('<div class="filter-section">', unsafe_allow_html=True)
-st.markdown("#### 🗂️ Filter & Select Customer")
+st.markdown("#### Filter & Select Customer")
 
 col1, col2 = st.columns([1, 2])
 
@@ -128,6 +150,12 @@ with col1:
         "🔵 Cold Start"
     ]
     selected_filter = st.selectbox("Filter by Engagement Type", engagement_options)
+
+    # Added Language Dropdown Control for the Hackathon Localization Feature
+    chosen_language = st.selectbox(
+        "🌐 Notification Output Language",
+        ["English", "Hindi", "Telugu", "Marathi", "Tamil", "Bengali"]
+    )
 
 filter_map = {
     "All Customers": None,
@@ -179,7 +207,7 @@ st.markdown('</div>', unsafe_allow_html=True)
 
 # Selected customer quick info
 selected = next(c for c in all_customers if c["customer_id"] == selected_customer_id)
-st.markdown("#### 👤 Selected Customer Preview")
+st.markdown("#### Selected Customer Preview")
 col1, col2, col3, col4, col5 = st.columns(5)
 col1.metric("Customer ID", selected["customer_id"])
 col2.metric("Name", selected["name"])
@@ -194,20 +222,21 @@ st.divider()
 # ─────────────────────────────────────────
 col1, col2, col3 = st.columns([1, 2, 1])
 with col2:
-    run = st.button("🚀 Run Engagement Pipeline", type="primary", use_container_width=True)
+    run = st.button("Run Engagement Pipeline", type="primary", use_container_width=True)
 
 if run:
     progress = st.progress(0, text="Initializing pipeline...")
 
     with st.spinner(""):
         progress.progress(10, text="Loading customer profile...")
-        time.sleep(0.5)
-        progress.progress(25, text="🧠 LLM calculating risk appetite...")
-        result = run_pipeline_cached(customer_id=selected_customer_id)
-        progress.progress(60, text="💡 Running Proactive Advisor Agent...")
-        time.sleep(0.5)
-        progress.progress(85, text="⚡ Running Autonomous Action Agent...")
-        time.sleep(0.5)
+        time.sleep(0.3)
+        progress.progress(25, text="LLM calculating risk appetite...")
+        # Now passing chosen language parameter to the modified engine
+        result = run_pipeline_cached(customer_id=selected_customer_id, target_lang=chosen_language)
+        progress.progress(60, text="Running Proactive Advisor Agent...")
+        time.sleep(0.3)
+        progress.progress(85, text="Running Autonomous Action Agent...")
+        time.sleep(0.3)
         progress.progress(100, text="✅ Pipeline Complete!")
 
     behavioral = result["behavioral"]
@@ -218,7 +247,7 @@ if run:
     st.divider()
 
     # ── Customer Profile ──
-    st.markdown("### 👤 Customer Profile")
+    st.markdown("### Customer Profile")
     col1, col2, col3, col4, col5, col6 = st.columns(6)
     col1.metric("Name", behavioral["customer_name"])
     col2.metric("Account Balance", f"₹{behavioral['balance_info']['balance']:,}")
@@ -234,7 +263,7 @@ if run:
 
     # ── Agent 1 ──
     st.markdown('<div class="agent-card">', unsafe_allow_html=True)
-    st.markdown("### 🔍 Agent 1 — Behavioral Intelligence Agent")
+    st.markdown("### Agent 1 — Behavioral Intelligence Agent")
     st.caption("Analyzes customer signals and calculates disengagement score dynamically")
 
     level = behavioral["disengagement"]["disengagement_level"]
@@ -255,18 +284,16 @@ if run:
     else:
         st.success("✅ No disengagement signals detected")
 
-    with st.expander("📊 View Full Behavioral Analysis"):
+    with st.expander("View Full Behavioral Analysis"):
         st.write(behavioral["analysis"])
     st.markdown('</div>', unsafe_allow_html=True)
-
-    st.divider()
 
     st.divider()
 
     # ── Loan Optimizer Agent ──
     loan = result["loan"]
     st.markdown('<div class="agent-card">', unsafe_allow_html=True)
-    st.markdown("### 💳 Agent 2 — Loan Optimizer Agent")
+    st.markdown("### Agent 2 — Loan Optimizer Agent")
     st.caption("Plans optimal loan repayment strategy based on salary and outstanding debt")
 
     if loan["has_loans"]:
@@ -278,14 +305,13 @@ if run:
         col4.metric("EMI Burden", f"{int(ls['emi_to_salary_ratio']*100)}% of salary")
         col5.metric("Burden Level", ls["burden_level"])
 
-        st.markdown("**📌 Quick Insights:**")
+        st.markdown("**Quick Insights:**")
         for tip in loan["optimization_tips"]:
-            st.info(f"💡 {tip}")
+            st.info(f" 💡 {tip}")
 
-        with st.expander("📋 View Full Repayment Plan"):
+        with st.expander("View Full Repayment Plan"):
             st.write(loan["repayment_plan"])
 
-        # Individual loan breakdown
         st.markdown("**🏦 Individual Loan Breakdown:**")
         for l in loan["loans"]:
             col1, col2, col3, col4 = st.columns(4)
@@ -297,29 +323,45 @@ if run:
         st.success(f"✅ {loan['message']}")
 
     st.markdown('</div>', unsafe_allow_html=True)
+
     # ── Agent 3 ──
     st.markdown('<div class="agent-card">', unsafe_allow_html=True)
-    st.markdown("### 💡 Agent 3 — Proactive Advisor Agent")
-    st.caption("Generates personalized recommendations based on AI-calculated risk appetite")
+    st.markdown("### Agent 3 — Proactive Advisor Agent")
+    st.caption("Generates personalized recommendations matched to targeted banking strategies")
 
-    st.info(f"💬 **Personalized Message to {behavioral['customer_name']}:**\n\n{advisor['personalized_message']}")
+    st.markdown(f"**Dynamic Optimization Target:** `{advisor['best_recommendation']}`")
+    st.markdown(f"**Target Language Generation Strategy:** `{advisor['target_language']}`")
+    st.info(f"**Internal Log System View:**\n\n{advisor['personalized_message']}")
 
-    st.markdown(f"**Total Recommendations Generated: {len(advisor['recommendations'])}**")
+    # Added Interactive WhatsApp Nudge Outbound Sandbox Loop
+    st.markdown("#### 📱 Outbound Delivery Sandbox (Omni-channel WhatsApp Simulator)")
+    st.caption("Simulated secure gateway callback layer processing edge notifications at zero operational cost.")
+    
+    st.markdown('<div class="whatsapp-container">', unsafe_allow_html=True)
+    st.markdown(f"""
+        <div class="whatsapp-bubble">
+            <strong>💬 Official SBI Assistant:</strong><br>
+            {advisor['personalized_message']}
+        </div>
+    """, unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+    st.markdown(f"**All Backend Options Generated: {len(advisor['recommendations'])}**")
     for i, rec in enumerate(advisor["recommendations"]):
-        badge = "⭐ Best Match" if i == 0 else f"Option {i+1}"
+        badge = " Best Match" if i == 0 else f"Option {i+1}"
         with st.expander(f"{badge}: {rec['action']}"):
             col1, col2, col3 = st.columns(3)
             col1.metric("Recommended Amount", f"₹{rec['amount']:,}")
             col2.metric("Compliance Tier", rec["tier"].split("—")[0].strip())
             col3.metric("Approval Required", "Yes ⚠️" if "Tier 2" in rec["tier"] else "No ✅")
-            st.write(f"**📌 Reason:** {rec['reason']}")
+            st.write(f"**Reason:** {rec['reason']}")
     st.markdown('</div>', unsafe_allow_html=True)
 
     st.divider()
 
     # ── Agent 4 ──
     st.markdown('<div class="agent-card">', unsafe_allow_html=True)
-    st.markdown("### ⚡ Agent 4 — Autonomous Action Agent")
+    st.markdown("### Agent 4 — Autonomous Action Agent")
     st.caption("Executes compliant actions autonomously or routes for customer approval")
 
     status = action["status"]
@@ -330,9 +372,9 @@ if run:
     col3.metric("Compliance", "✅ Passed" if action["compliance"]["compliant"] else "❌ Failed")
     col4.metric("Audit Trail", "✅ Logged" if action["compliance"]["audit_logged"] else "❌ No")
 
-    st.success(f"📋 {action['status_update']}")
+    st.success(f"{action['status_update']}")
 
-    with st.expander("📁 View Full Audit Log"):
+    with st.expander("View Full Audit Log"):
         if action["audit_log"]:
             st.json(action["audit_log"][0])
     st.markdown('</div>', unsafe_allow_html=True)
@@ -341,15 +383,15 @@ if run:
 
     # ── Approval Section ──
     if status == "PENDING_APPROVAL":
-        st.markdown("### 🔐 Customer Approval Required")
+        st.markdown("### Customer Approval Required")
         st.warning(f"**Action:** {action['action']} | **Amount:** ₹{action['amount']:,} | **Requires your explicit consent**")
 
         col1, col2 = st.columns(2)
         if col1.button("✅ Approve Action", type="primary", use_container_width=True):
-            st.success("✅ Action approved! Transaction initiated and audit logged securely.")
+            st.success("✅ Action approved! Transaction initiated and audit logged securely via SMS/WhatsApp framework simulation.")
             st.balloons()
-        if col2.button("❌ Reject Action", use_container_width=True):
-            st.error("❌ Action rejected by customer. No transaction executed. Rejection audit logged.")
+        if col2.button("Reject Action", use_container_width=True):
+            st.error("Action rejected by customer. No transaction executed. Rejection audit logged.")
 
     st.divider()
     st.markdown("""
