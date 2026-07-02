@@ -1,19 +1,87 @@
 import json
 import os
+import sqlite3
 from pathlib import Path
 
+def get_db_connection():
+    """
+    Helper to safely resolve the database file path from anywhere 
+    within your project hierarchy and establish a connection.
+    """
+    # Try locating it relative to this file's folder
+    db_path = Path(__file__).resolve().parent.parent / "sbi_bank.db"
+    if not db_path.exists():
+        db_path = Path("sbi_bank.db") # Fallback to local working directory
+        
+    conn = sqlite3.connect(str(db_path))
+    conn.row_factory = sqlite3.Row  # Crucial: enables dictionary-like column mappings
+    return conn
+
+def rebuild_customer_dict(customer_row, cursor) -> dict:
+    """
+    Helper to reconstruct a raw database row back into the exact 
+    nested dictionary structure that the analytical logic expects.
+    """
+    customer = dict(customer_row)
+    
+    # 1. Convert comma-separated string back to array of strings
+    if customer["current_services_in_use"]:
+        customer["current_services_in_use"] = customer["current_services_in_use"].split(",")
+    else:
+        customer["current_services_in_use"] = []
+        
+    # 2. Query and attach matching loans from the loans table
+    cursor.execute('''
+        SELECT loan_type, sanctioned_amount, outstanding_amount, emi, tenure_months 
+        FROM loans 
+        WHERE customer_id = ?
+    ''', (customer["customer_id"],))
+    loan_rows = cursor.fetchall()
+    
+    if loan_rows:
+        customer["loans"] = [dict(loan) for loan in loan_rows]
+    else:
+        # Drop the loans key if none exist to perfectly mimic your original JSON rules
+        customer.pop("loans", None)
+        
+    return customer
+
 def load_all_customers():
-    path = Path("data/mock_customer.json")
-    with open(path, "r") as f:
-        return json.load(f)
+    """
+    Fetches every customer profile from the SQLite database.
+    """
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT * FROM customers")
+        rows = cursor.fetchall()
+        return [rebuild_customer_dict(row, cursor) for row in rows]
+    finally:
+        conn.close()
 
 def load_customer_data(customer_id: str = None):
-    customers = load_all_customers()
-    if customer_id:
-        for c in customers:
-            if c["customer_id"] == customer_id:
-                return c
-    return customers[0]
+    """
+    Queries a targeted customer profile using an indexed SQL search.
+    Defaults to the first customer in the database if no ID is passed.
+    """
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    try:
+        if customer_id:
+            cursor.execute("SELECT * FROM customers WHERE customer_id = ?", (customer_id,))
+            row = cursor.fetchone()
+            if row:
+                return rebuild_customer_dict(row, cursor)
+        
+        # Fallback if ID is missing or missing from the database
+        cursor.execute("SELECT * FROM customers LIMIT 1")
+        fallback_row = cursor.fetchone()
+        if fallback_row:
+            return rebuild_customer_dict(fallback_row, cursor)
+        
+        raise ValueError("The SQLite database 'customers' table is empty.")
+    finally:
+        conn.close()
 
 def analyze_balance(customer: dict) -> dict:
     balance = customer["account_balance"]
@@ -121,7 +189,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
     emi_ratio = balance_info["emi_to_salary_ratio"]
     salary = customer["monthly_salary"]
 
-    # If EMI burden is too high — no investment recommendations
     if emi_ratio > 0.5:
         return [{
             "action": "Debt Consolidation Advisory",
@@ -130,7 +197,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
             "tier": "Tier 1 — informational only"
         }]
 
-    # If no investable surplus
     if surplus <= 0:
         return [{
             "action": "Build Emergency Fund",
@@ -139,7 +205,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
             "tier": "Tier 1 — informational only"
         }]
 
-    # Insurance recommendations
     if "health_insurance" not in services and salary > 20000:
         recommendations.append({
             "action": "Get SBI Health Insurance",
@@ -148,7 +213,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
             "tier": "Tier 2 — requires your approval"
         })
 
-    # FD recommendation for low risk
     if surplus > 10000 and risk_appetite == "low":
         recommendations.append({
             "action": "Open Fixed Deposit",
@@ -157,7 +221,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
             "tier": "Tier 1 — informational only"
         })
 
-    # SIP for moderate risk
     if surplus > 20000 and risk_appetite == "moderate":
         if "mutual_fund" not in services:
             recommendations.append({
@@ -167,7 +230,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
                 "tier": "Tier 2 — requires your approval"
             })
 
-    # Equity for high risk
     if surplus > 50000 and risk_appetite == "high":
         recommendations.append({
             "action": "Invest in Equity Mutual Fund",
@@ -176,7 +238,6 @@ def get_recommendation(customer: dict, balance_info: dict, risk_appetite: str) -
             "tier": "Tier 2 — requires your approval"
         })
 
-    # Auto sweep for large idle amounts
     if surplus > 30000:
         recommendations.append({
             "action": "Auto-sweep Idle Balance to FD",
@@ -214,16 +275,11 @@ def check_compliance(action: str) -> dict:
         return {"compliant": False, "requires_approval": True, "audit_logged": True}
     
 def fetch_live_sbi_rates():
-    """
-    Dynamically loads the active 2026 SBI schemes from our local storage registry.
-    Acts as our internal rate service microservice layer.
-    """
     file_path = os.path.join("data", "sbi_products.json")
     try:
         with open(file_path, "r", encoding="utf-8") as f:
             return json.load(f)
     except FileNotFoundError:
-        # Safe fallback defaults so your app never crashes during the hackathon
         return {
             "fixed_deposits": [
                 {

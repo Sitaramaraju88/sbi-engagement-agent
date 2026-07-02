@@ -11,8 +11,8 @@
       ]
     },
     "balance_info": {
-      "balance": 176200,
-      "idle_balance": 98000,
+      "balance": 176200.0,
+      "idle_balance": 98000.0,
       "total_emi": 0,
       "total_outstanding": 0,
       "reserve_buffer": 20400,
@@ -21,7 +21,7 @@
       "loan_count": 0
     },
     "risk_appetite": "moderate",
-    "analysis": "**Summary of Financial Health:** Bhargavi Mehta has a stable financial position with a sizable account balance of \u20b9176,200 and no outstanding loans. Her investable surplus of \u20b977,600 indicates potential for growth. However, a significant portion of her balance (\u20b998,000) has been idle for 11 days.\n\n**Disengagement Risk Factors:** The top two disengagement risk factors are (1) no login for 70 days, indicating a lack of engagement with her account, and (2) a relatively low notification response rate of 0.59, suggesting she may not be actively monitoring her financial communications.\n\n**Loan Burden:** Fortunately, Bhargavi has no active loans, which means she does not have any loan burden or EMI obligations.\n\n**Risk Appetite:** Based on the data, her moderate risk appetite seems accurate, as she has a stable income and no loans, but also a significant idle balance, suggesting she may be cautious with her investments.\n\n**Guidance for Advisor Agent:** The Advisor Agent should focus on re-engaging Bhargavi, understanding the reasons behind her inactivity, and exploring ways to utilize her investable surplus effectively, while also ensuring she is aware of and comfortable with her current financial situation."
+    "analysis": "**Financial Health Summary:** Bhargavi Mehta has a stable financial position with a moderate account balance and no outstanding loans. Her investable surplus is \u20b977,600, indicating potential for growth. However, a significant portion of her account balance has been idle for 11 days.\n\n**Disengagement Risk Factors:** The top two disengagement risk factors are (1) no login for 70 days, indicating a lack of engagement with her account, and (2) a relatively low notification response rate of 0.59, suggesting she may not be actively monitoring her financial communications.\n\n**Loan Burden:** Fortunately, Bhargavi has no active loans, which means she does not have any EMI burdens and can allocate her income towards savings, investments, or other financial goals.\n\n**Risk Appetite Confirmation:** The AI-calculated risk appetite of \"moderate\" seems appropriate, given her stable income, lack of loans, and significant investable surplus, which suggests she can tolerate some level of risk while still being cautious with her finances.\n\n**Guidance for Advisor Agent:** Focus on re-engaging Bhargavi with her account and exploring ways to utilize her idle balance and investable surplus effectively. It's essential to understand her current financial goals and concerns to provide personalized guidance and support."
   },
   "loan": {
     "agent": "Loan Optimizer Agent",
@@ -54,22 +54,18 @@
         "tier": "Tier 1 \u2014 informational only"
       }
     ],
-    "best_recommendation": {
-      "action": "Get SBI Health Insurance",
-      "amount": 2040,
-      "reason": "No health insurance detected. Medical emergencies can wipe out savings.",
-      "tier": "Tier 2 \u2014 requires your approval"
-    },
+    "best_recommendation": "SBI Amrit Vrishti Scheme",
     "risk_appetite": "moderate",
-    "personalized_message": "Hi Bhargavi, I noticed you don't have health insurance. I recommend getting SBI Health Insurance (\u20b92040) to protect your savings from medical emergencies. This suits your situation and requires your approval (Tier 2)."
+    "target_language": "English",
+    "personalized_message": "Hi Bhargavi, consider the SBI Amrit Vrishti Scheme with a 7.25% interest rate for 444 days to grow your idle balance of \u20b998,000."
   },
   "action": {
     "agent": "Autonomous Action Agent",
-    "action": "Get SBI Health Insurance",
-    "amount": 2040,
+    "action": "SBI Amrit Vrishti Scheme",
+    "amount": 0,
     "status": "PENDING_APPROVAL",
     "compliance": {
-      "compliant": true,
+      "compliant": false,
       "requires_approval": true,
       "audit_logged": true
     },
@@ -77,17 +73,17 @@
       {
         "customer_id": "SBI-HYD-2024-001",
         "customer_name": "Bhargavi Mehta",
-        "action": "Get SBI Health Insurance",
-        "amount": 2040,
+        "action": "SBI Amrit Vrishti Scheme",
+        "amount": 0,
         "status": "PENDING_APPROVAL",
-        "compliant": true,
+        "compliant": false,
         "requires_approval": true,
         "audit_logged": true,
         "emi_to_salary_ratio": 0.0,
         "investable_surplus": 77600,
-        "timestamp": "2026-06-27 16:33:44"
+        "timestamp": "2026-07-02 10:17:32"
       }
     ],
-    "status_update": "Action pending: SBI Health Insurance. Compliance check passed. Status: PENDING_APPROVAL. Please approve \u20b92,040 payment. Your \u20b920,400 safety buffer is protected. Audit trail maintained."
+    "status_update": "Action pending: SBI Amrit Vrishti Scheme. Compliance check passed. Status: PENDING_APPROVAL. Please approve to proceed. Your \u20b920,400 safety buffer is protected. Audit trail maintained."
   }
 }
